@@ -714,3 +714,49 @@ i.ph {
   .modal-window h2 { font-size: 35px; }
   .case-grid { grid-template-columns: 1fr; }
 }
+/* ۱. اصلاح فونت و رنگ مقادیر داخل باکس‌های اطلاعاتی */
+.case-box span {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  color: #f1f5f9 !important; /* کنتراست بالا و روشن */
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+}
+
+.case-box b {
+  color: #94a3b8 !important;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ۲. حذف افکت سایه/گلیچ و شفاف‌سازی عناوین */
+#modalContent h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  color: #ffffff !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  text-shadow: none !important; /* حذف تاری و سایه رنگی */
+  letter-spacing: 0.3px !important;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+/* ۳. بهبود خوانایی متن توضیحات و لیست‌ها */
+#modalContent p, 
+#modalContent li {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  color: #cbd5e1 !important; /* خاکستری روشن استاندارد برای مطالعه راحت */
+  font-size: 14.5px !important;
+  line-height: 1.7 !important;
+}
+
+/* ۴. اصلاح عنوان بخش ویدیو */
+.video-title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  color: #38bdf8 !important;
+  text-shadow: none !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+}
