@@ -8,9 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- اضافه شدن کتابخانه آیکون Phosphor -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- اضافه شدن انیمیشن لودینگ -->
+  <div id="preloader">
+    <div class="loader-ball"></div>
+    <div class="loader-text">LOADING PHYSICS...</div>
+  </div>
+
   <div class="noise"></div>
 
   <header class="nav">
@@ -22,7 +30,7 @@
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="nav-cv" href="Fatemeh-Ghasemi-CV.pdf" download>Download CV ↗</a>
+    <a class="nav-cv" href="Fatemeh-Ghasemi-CV.pdf" download>Download CV <i class="ph ph-download-simple"></i></a>
   </header>
 
   <main id="top">
@@ -35,8 +43,8 @@
           physics-based mechanics, clean C# architecture and mobile game development.
         </p>
         <div class="hero-actions">
-          <a class="btn primary" href="#projects">View Projects <span>↓</span></a>
-          <a class="btn secondary" href="#contact">Let's talk <span>↗</span></a>
+          <a class="btn primary" href="#projects">View Projects <i class="ph ph-arrow-down"></i></a>
+          <a class="btn secondary" href="#contact">Let's talk <i class="ph ph-arrow-up-right"></i></a>
         </div>
         <div class="quick-stats">
           <div><strong>3+</strong><span>Years Unity</span></div>
@@ -101,7 +109,7 @@
           <div class="tags">
             <span>Physics</span><span>Optimization</span><span>Boosters</span><span>Scriptable Objects</span>
           </div>
-          <button class="text-link" data-project="match">Explore case study <span>↗</span></button>
+          <button class="text-link" data-project="match">Explore case study <i class="ph ph-arrow-right"></i></button>
         </div>
       </article>
 
@@ -111,8 +119,8 @@
           <div class="project-body">
             <p class="project-role">SOLO DEVELOPER · SURVIVAL HORROR</p>
             <h3>Hospital Escape</h3>
-            <p>First-person survival horror project focused on gameplay systems, interaction and reusable architecture.</p>
-            <button class="text-link" data-project="hospital">View project <span>↗</span></button>
+            <p>First-person survival horror project focused on modular item pickup, inventory systems, and interaction architecture.</p>
+            <button class="text-link" data-project="hospital">View project <i class="ph ph-arrow-right"></i></button>
           </div>
         </article>
 
@@ -122,17 +130,17 @@
             <p class="project-role">SOLO DEVELOPER · SHOOTER</p>
             <h3>Galaxy Shooter</h3>
             <p>A personal shooter project exploring combat systems, movement, enemies and gameplay feedback.</p>
-            <button class="text-link" data-project="galaxy">View project <span>↗</span></button>
+            <button class="text-link" data-project="galaxy">View project <i class="ph ph-arrow-right"></i></button>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-thumb bingo"><span>04</span><b>BINGO</b></div>
+          <div class="project-thumb bingo"><span>04</span><b>BINGO / DABORNA</b></div>
           <div class="project-body">
             <p class="project-role">GAMEPLAY DEVELOPER · CASUAL</p>
             <h3>Bingo</h3>
-            <p>Casual mobile game work covering gameplay logic, UI systems, tutorials, analytics and polish.</p>
-            <button class="text-link" data-project="bingo">View project <span>↗</span></button>
+            <p>Commercial mobile game work covering event-driven UI systems, gameplay logic, and software analysis.</p>
+            <button class="text-link" data-project="bingo">View project <i class="ph ph-arrow-right"></i></button>
           </div>
         </article>
 
@@ -142,7 +150,7 @@
             <p class="project-role">UNITY · GAMEPLAY</p>
             <h3>Point &amp; Click</h3>
             <p>An interactive point-and-click project focused on player interaction and gameplay flow.</p>
-            <button class="text-link" data-project="pointclick">View project <span>↗</span></button>
+            <button class="text-link" data-project="pointclick">View project <i class="ph ph-arrow-right"></i></button>
           </div>
         </article>
 
@@ -152,7 +160,7 @@
             <p class="project-role">SOLO PROGRAMMER · 3 DAYS</p>
             <h3>Bubble Game Jam</h3>
             <p>A three-day game jam project demonstrating rapid prototyping and end-to-end gameplay implementation.</p>
-            <button class="text-link" data-project="bubble">View project <span>↗</span></button>
+            <button class="text-link" data-project="bubble">View project <i class="ph ph-arrow-right"></i></button>
           </div>
         </article>
 
@@ -161,8 +169,8 @@
           <div class="project-body">
             <p class="project-role">UNITY · 2.5D</p>
             <h3>Gnosa</h3>
-            <p>A 2.5D project exploring character movement, interactions and gameplay programming.</p>
-            <button class="text-link" data-project="gnosa">View project <span>↗</span></button>
+            <p>A 2.5D project exploring fluid character movement frameworks and tight gameplay programming.</p>
+            <button class="text-link" data-project="gnosa">View project <i class="ph ph-arrow-right"></i></button>
           </div>
         </article>
       </div>
@@ -180,11 +188,11 @@
           <div class="timeline-date">JUL 2024 — PRESENT</div>
           <div>
             <h3>Unity Gameplay Programmer</h3>
-            <p class="muted">Private Game Studio</p>
+            <p class="muted">Caspian Game Studio</p>
             <ul>
-              <li>Developed core gameplay systems and mechanics for commercial Unity mobile games.</li>
+              <li>Developed core gameplay systems and mechanics for commercial Unity mobile games, including titles like <strong>Daborna</strong> and Bingo.</li>
               <li>Implemented physics-heavy gameplay supporting hundreds of active Rigidbody objects.</li>
-              <li>Built boosters, tutorials, mini-games, progression systems and reusable gameplay frameworks.</li>
+              <li>Built boosters, tutorials, mini-games, progression systems and reusable event-driven frameworks.</li>
               <li>Profiled CPU bottlenecks with Unity Profiler and improved physics, collisions and Rigidbody behavior.</li>
               <li>Worked with designers, artists, animators, QA and programmers using Git and ClickUp.</li>
             </ul>
@@ -196,8 +204,8 @@
             <h3>Freelance / Indie Game Developer</h3>
             <p class="muted">Two-person team · Survival Horror</p>
             <ul>
-              <li>Developing a first-person survival horror game with a focus on reusable gameplay systems.</li>
-              <li>Working closely with a 2D artist on a custom 2.5D character controller and movement system.</li>
+              <li>Developing a first-person survival horror game inspired by Granny, focusing on modular inventory and world interaction logic.</li>
+              <li>Working closely with a 2D artist on a custom 2.5D character controller and fluid movement framework.</li>
             </ul>
           </div>
         </div>
@@ -218,14 +226,16 @@
           </p>
           <p>
             I enjoy the technical side of games: physics, system design, game math,
-            debugging and finding practical solutions to difficult gameplay problems.
-            I’m also comfortable working independently and collaborating closely with
-            artists and designers.
+            debugging and finding practical solutions to difficult gameplay problems. 
+            Beyond C#, I also explore Python and machine learning applications within Visual Studio Code 
+            to broaden my technical perspective. I’m comfortable working independently or 
+            collaborating closely with artists and designers.
           </p>
           <div class="about-facts">
+            <div><b>Education</b><span>B.Sc. Computer Engineering (Term 5) · Azad University</span></div>
+            <div><b>Languages</b><span>English (C2) · German (A2) · Persian (Native)</span></div>
             <div><b>Unity</b><span>2D / 3D · Mobile · PC</span></div>
             <div><b>C#</b><span>OOP · SOLID · Patterns · Events</span></div>
-            <div><b>Focus</b><span>Gameplay · Physics · Optimization</span></div>
           </div>
         </div>
       </div>
@@ -239,10 +249,10 @@
         </div>
       </div>
       <div class="skills-grid">
-        <div class="skill-group"><h3>Programming</h3><p>C# · OOP · SOLID · Design Patterns · Interfaces · Events &amp; Delegates · LINQ · Async Programming · Data Structures · JSON · Save/Load</p></div>
+        <div class="skill-group"><h3>Programming</h3><p>C# · OOP · SOLID · Design Patterns · Interfaces · Events &amp; Delegates · LINQ · Python · Data Structures · JSON · Save/Load</p></div>
         <div class="skill-group"><h3>Gameplay</h3><p>Gameplay Systems · Architecture · Physics · Game Math · FSM · AI · Interaction · Combat · Technical Problem Solving</p></div>
         <div class="skill-group"><h3>Unity</h3><p>2D / 3D · Rigidbody · Physics Materials · Scriptable Objects · Object Pooling · Particles · UI · Animator · Timeline · Cinemachine · NavMesh · URP/HDRP</p></div>
-        <div class="skill-group"><h3>Tools</h3><p>Git · GitHub · GitLab · SourceTree · ClickUp · Unity Profiler · Frame Debugger · Blender · Photoshop · Android Build Pipeline</p></div>
+        <div class="skill-group"><h3>Tools</h3><p>Git · GitHub · GitLab · SourceTree · Visual Studio Code · ClickUp · Unity Profiler · Frame Debugger · Blender · Photoshop</p></div>
       </div>
     </section>
 
@@ -253,10 +263,10 @@
         <p>I'm open to Unity Gameplay Programmer opportunities and international teams.</p>
       </div>
       <div class="contact-links">
-        <a href="mailto:farimahghasemi.workk@gmail.com">farimahghasemi.workk@gmail.com ↗</a>
-        <a href="https://ir.linkedin.com/in/fatemeh-ghasemi-5772963b3" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a href="https://github.com/FatemehGhasemiDev" target="_blank" rel="noopener">GitHub ↗</a>
-        <a href="Fatemeh-Ghasemi-CV.pdf" download>Download CV ↓</a>
+        <a href="mailto:farimahghasemi.workk@gmail.com">farimahghasemi.workk@gmail.com <i class="ph ph-arrow-up-right"></i></a>
+        <a href="https://ir.linkedin.com/in/fatemeh-ghasemi-5772963b3" target="_blank" rel="noopener">LinkedIn <i class="ph ph-arrow-up-right"></i></a>
+        <a href="https://github.com/FatemehGhasemiDev" target="_blank" rel="noopener">GitHub <i class="ph ph-arrow-up-right"></i></a>
+        <a href="Fatemeh-Ghasemi-CV.pdf" download>Download CV <i class="ph ph-download-simple"></i></a>
       </div>
     </section>
   </main>
