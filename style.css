@@ -760,3 +760,51 @@ i.ph {
   font-weight: 700 !important;
   letter-spacing: 1px !important;
 }
+/* ساختار کلی بخش ویدیو */
+.video-section {
+  display: flex !important;
+  flex-direction: column !important; /* قرارگیری عنوان بالا و دکمه زیر آن */
+  align-items: flex-start !important;
+  gap: 10px !important;
+  margin-top: 20px !important;
+}
+
+/* عنوان VIDEOS */
+.video-title {
+  display: block !important;
+  color: #38bdf8 !important; /* رنگ آبی روشن یا سفید طبق تم شما */
+  font-family: monospace, system-ui, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+}
+
+/* دکمه کپسولی (Pill Button) */
+.video-pill-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 8px 20px !important;
+  background-color: #0f172a !important; /* پس‌زمینه تیره کپسول */
+  color: #e2e8f0 !important;
+  border: 1px solid #334155 !important; /* خط دور کپسول */
+  border-radius: 9999px !important; /* ایجاد حالت کاملاً گرد (Pill) */
+  text-decoration: none !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+/* افکت شناور روی دکمه */
+.video-pill-btn:hover {
+  background-color: #1e293b !important;
+  border-color: #475569 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+.video-pill-btn .arrow {
+  font-size: 14px !important;
+}
