@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     match: {
       kicker: "01 · COMMERCIAL / MOBILE",
       title: "Match Factory-inspired 3D Puzzle",
-      intro: "A commercial 3D puzzle game inspired by casual titles like Match Factory. The game features hundreds of physics-based objects dropping, stacking, and interacting in real time. The player's goal is to find and match specific items before the timer runs out. I was responsible for implementing the core gameplay loop, physics-based interactions, booster systems, mini-games, tutorials, and gameplay polish. A major focus of my work was creating responsive mechanics while maintaining stable performance with a large number of active physics objects.",
+      intro: "A commercial 3D puzzle game inspired by casual titles like Match Factory. The game features hundreds of physics-based objects dropping, stacking, and interacting in real time. The player's goal is to find and match specific items before the timer runs out.",
       notionLink: "https://notion.so/your-match-factory-link",
       boxes: [
         ["My Role", "Gameplay Programmer"],
@@ -75,18 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
         ["Focus", "Core Gameplay Mechanics"]
       ],
       sections: [
-        [
-          "Core gameplay",
-          "Developed custom item spawning logic, dynamic interaction, level progression, and gameplay state management using FSM."
-        ],
-        [
-          "Physics optimization",
-          "Optimized Rigidbody behavior, collision handling and Physics Materials. Profiled physics-heavy scenes with Unity Profiler and Frame Debugger to maintain stable performance."
-        ],
-        [
-          "Boosters & Systems Overview",
-          "Implemented specialized mechanics including Vacuum, Fireworks, Fan, Spring, Gun, and Sandglass boosters with custom target selection, physics control, and UI integration."
-        ],
         [
           "Vacuum Booster",
           "The Vacuum Booster selects specific objects from the board and pulls them into the collection area.<br><br>" +
