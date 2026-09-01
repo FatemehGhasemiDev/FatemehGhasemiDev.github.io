@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
       kicker: "01 · COMMERCIAL / MOBILE",
       title: "Match Factory-inspired 3D Puzzle",
       intro: "A commercial 3D puzzle game inspired by casual titles like Match Factory. The game features hundreds of physics-based objects dropping, stacking, and interacting in real time. The player's goal is to find and match specific items before the timer runs out.",
-      notionLink: "https://notion.so/your-match-factory-link",
       boxes: [
         ["My Role", "Gameplay Programmer"],
         ["Engine", "Unity · C#"],
@@ -83,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
           • Managed physics behavior during the pull sequence by dynamically disabling Rigidbody gravity and colliders to prevent unwanted collisions inside the item pile.<br>
           • Developed custom movement using Vector3.Lerp and Animation Curves to smoothly move selected objects into the vacuum effect and UI collection slots without visual clipping.<br><br>
           <div class="video-section">
-            <span class="video-title">VIDEOS</span>
+            <span class="video-title">Vacuum Booster Video</span>
             <a href="https://drive.google.com/file/d/15xnFxGg7pTU3W7fN_87YfCkXym9Ou1qh/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
               Gameplay <span class="arrow">↗</span>
             </a>
@@ -98,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
     • Applied physics forces and customized Physics Materials to create realistic bouncing and movement behavior.<br>
     • Restored object collisions after the effect ended to return objects back to normal physics interaction.<br><br>
     <div class="video-section">
-      <span class="video-title">VIDEOS</span>
+      <span class="video-title">Fan Booster Video</span>
       <a href="https://drive.google.com/file/d/17v6geNaB1I-b4nRm8_wlcxqs2QmDj9DY/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
         Gameplay <span class="arrow">↗</span>
       </a>
@@ -115,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     • Designed a coroutine-based state management system that correctly handles pause/resume situations during booster execution.<br>
     • Ensured all timers, animations, and visual states safely restore after the booster finishes.<br><br>
     <div class="video-section">
-      <span class="video-title">VIDEOS</span>
+      <span class="video-title">Gun Booster Video</span>
       <a href="https://drive.google.com/file/d/1IIIn0Xm48r8MVSUdgUItiYFXwLZqB9h5/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
         Gameplay <span class="arrow">↗</span>
       </a>
@@ -131,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     • Implemented sorting logic to prioritize objects placed on top of the pile, improving gameplay effectiveness.<br>
     • Created a system that balances target selection while clearing different item groups.<br><br>
     <div class="video-section">
-      <span class="video-title">VIDEOS</span>
+      <span class="video-title">Fireworks Booster Video</span>
       <a href="https://drive.google.com/file/d/1oBOO8JHl2y7xzRPmXZy1Is5Y8K9A7R6o/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
         Gameplay <span class="arrow">↗</span>
       </a>
@@ -147,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
     • Implemented destination detection logic to trigger the timer update when particles reached the UI target.<br>
     • Designed the system to be easily adjustable for future balancing.<br><br>
     <div class="video-section">
-      <span class="video-title">VIDEOS</span>
+      <span class="video-title">Sandglass Booster Video</span>
       <a href="https://drive.google.com/file/d/1Ha0gbrKA-rASWC_AFNPUzkf1IktXzOTc/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
         Gameplay <span class="arrow">↗</span>
       </a>
@@ -162,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
     • Created key spawning logic and gameplay interactions.<br>
     • Developed custom curved animations using code and coroutines for key movement and reward presentation.<br><br>
     <div class="video-section">
-      <span class="video-title">VIDEOS</span>
+      <span class="video-title">Chief's Tool Video</span>
       <a href="https://drive.google.com/file/d/1CMUj2sjR_xS66eDtel5P5HpQ9rUgwEXx/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
         Gameplay <span class="arrow">↗</span>
       </a>
@@ -178,43 +177,33 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
       ]
     },
-    hospital: {
-      kicker: "02 · PERSONAL / SURVIVAL HORROR",
-      title: "Hospital Escape",
-      intro: "A first-person survival horror project inspired by Granny, developed with a focus on reusable gameplay systems, modular item pickup, and inventory logic.",
-      notionLink: "https://notion.so/your-hospital-escape-link",
-      boxes: [["Role", "Solo Developer"], ["Engine", "Unity · C#"], ["Genre", "Survival Horror"], ["Focus", "Gameplay · Interaction"]],
-      sections: [["Systems Architecture", "Designed modular item detection, inventory management, and world interaction logic."]]
-    },
-    galaxy: {
-      kicker: "03 · PERSONAL / SHOOTER",
-      title: "Galaxy Shooter",
-      intro: "A personal shooter project focused on gameplay programming and building a complete playable combat loop.",
-      notionLink: "https://notion.so/your-galaxy-link",
-      boxes: [["Role", "Solo Developer"], ["Engine", "Unity · C#"], ["Genre", "Shooter"], ["Focus", "Combat · Gameplay"]],
-      sections: [["Gameplay", "Implemented the core gameplay experience and supporting systems while experimenting with combat and player feedback."]]
-    },
     bingo: {
-      kicker: "04 · COMMERCIAL / CASUAL",
-      title: "Bingo / Daborna",
-      intro: "Commercial mobile game development involving software analysis, UI event systems, gameplay logic, and architectural design patterns at Caspian Game Studio.",
-      notionLink: "https://notion.so/your-bingo-link",
-      boxes: [["Role", "Gameplay Developer"], ["Engine", "Unity · C#"], ["Platform", "Mobile"], ["Focus", "Gameplay · Event Systems"]],
-      sections: [["Architecture", "Structured the software architecture and UI event systems to maintain a clean and scalable codebase."]]
-    },
-    pointclick: {
-      kicker: "05 · UNITY / GAMEPLAY",
-      title: "Point & Click",
-      intro: "An interactive Unity project focused on player interaction, gameplay flow and systems programming.",
-      notionLink: "https://notion.so/your-pointclick-link",
-      boxes: [["Role", "Unity Developer"], ["Engine", "Unity · C#"], ["Genre", "Point & Click"], ["Focus", "Interaction · Gameplay"]],
-      sections: [["Systems", "Implemented gameplay interactions and supporting logic to create a coherent player flow."]]
+  kicker: "04 · COMMERCIAL / CASUAL",
+  title: "Bingo",
+  intro: "A fast-paced commercial mobile Bingo game (inspired by titles like Bingo Blitz). Focused on core gameplay algorithms, event-driven UI systems, dynamic tutorials, and performance profiling at Turquoise Games.",
+  boxes: [["Role", "Gameplay Developer"], ["Engine", "Unity · C#"], ["Platform", "Mobile"], ["Focus", "Core Logic & Event UI"]],
+      sections: [
+        [
+          "Core Gameplay Architecture",
+          `• Architected and maintained the primary Bingo gameplay loop, multi-card state machine, and dynamic number generation algorithms.<br>
+          • Designed ScriptableObject-driven data pipelines for scalable game configurations, balance settings, and progression systems.`
+        ],
+        [
+          "Event-Driven UI & Meta-Systems",
+          `• Built a decoupled, event-driven UI framework to ensure clean separation between core game logic and presentation.<br>
+          • Developed scalable leaderboard systems, dynamic player ranking logic, and interactive tutorial frameworks.`
+        ],
+        [
+          "Analytics, Performance & Polish",
+          `• Integrated player telemetry and automated analytics tracking for gameplay balance and win-rate analysis.<br>
+          • Conducted ongoing performance profiling, initialization pipeline optimization, and game juice polish across live iterations.`
+        ]
+      ]
     },
     bubble: {
       kicker: "06 · GAME JAM / 3 DAYS",
       title: "Bubble Game Jam",
       intro: "A three-day game jam project developed as a solo programmer, focused on rapid prototyping and delivering a complete playable experience.",
-      notionLink: "https://notion.so/your-bubble-link",
       boxes: [["Role", "Solo Programmer"], ["Time", "3 Days"], ["Engine", "Unity · C#"], ["Focus", "Rapid Prototyping"]],
       sections: [["Development", "Handled gameplay programming and implementation under a short deadline, prioritizing a playable and polished core loop."]]
     },
@@ -222,9 +211,29 @@ document.addEventListener('DOMContentLoaded', () => {
       kicker: "07 · PERSONAL / 2.5D",
       title: "Gnosa",
       intro: "A 2.5D Unity project inspired by Neva, featuring a fluid character movement framework and animation integration.",
-      notionLink: "https://notion.so/your-gnosa-link",
       boxes: [["Role", "Unity Developer"], ["Engine", "Unity · C#"], ["Style", "2.5D"], ["Focus", "Movement Controller"]],
       sections: [["Gameplay", "Implemented character movement and animation integration for a 2.5D environment."]]
+    },
+    hospital: {
+      kicker: "02 · PERSONAL / SURVIVAL HORROR",
+      title: "Hospital Escape",
+      intro: "A first-person survival horror project inspired by Granny, developed with a focus on reusable gameplay systems, modular item pickup, and inventory logic.",
+      boxes: [["Role", "Solo Developer"], ["Engine", "Unity · C#"], ["Genre", "Survival Horror"], ["Focus", "Gameplay · Interaction"]],
+      sections: [["Systems Architecture", "Designed modular item detection, inventory management, and world interaction logic."]]
+    },
+    galaxy: {
+      kicker: "03 · PERSONAL / SHOOTER",
+      title: "Galaxy Shooter",
+      intro: "A personal shooter project focused on gameplay programming and building a complete playable combat loop.",
+      boxes: [["Role", "Solo Developer"], ["Engine", "Unity · C#"], ["Genre", "Shooter"], ["Focus", "Combat · Gameplay"]],
+      sections: [["Gameplay", "Implemented the core gameplay experience and supporting systems while experimenting with combat and player feedback."]]
+    },
+    pointclick: {
+      kicker: "05 · UNITY / GAMEPLAY",
+      title: "Point & Click",
+      intro: "An interactive Unity project focused on player interaction, gameplay flow and systems programming.",
+      boxes: [["Role", "Unity Developer"], ["Engine", "Unity · C#"], ["Genre", "Point & Click"], ["Focus", "Interaction · Gameplay"]],
+      sections: [["Systems", "Implemented gameplay interactions and supporting logic to create a coherent player flow."]]
     }
   };
 
