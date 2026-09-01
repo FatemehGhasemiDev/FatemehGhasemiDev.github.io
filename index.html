@@ -4,16 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Fatemeh Ghasemi — Unity Gameplay Programmer and Mobile Game Developer.">
-  <title>Fatemeh Ghasemi | Unity Gameplay Programmer</title>
+  <title>Fatemeh Ghasemi | Unity Programmer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- اضافه شدن کتابخانه آیکون Phosphor -->
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- اضافه شدن انیمیشن لودینگ -->
   <div id="preloader">
     <div class="loader-ball"></div>
     <div class="loader-text">LOADING PHYSICS...</div>
@@ -35,38 +33,38 @@
 
   <main id="top">
     <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="dot"></span> UNITY GAMEPLAY PROGRAMMER</p>
+      <div class="hero-copy animate-up">
+        <p class="eyebrow"><span class="dot pulse"></span> UNITY PROGRAMMER &amp; DEVELOPER</p>
         <h1>Building gameplay<br><em>that feels good.</em></h1>
         <p class="hero-text">
-          I’m Fatemeh Ghasemi, a Unity Gameplay Programmer focused on gameplay systems,
-          physics-based mechanics, clean C# architecture and mobile game development.
+          I’m Fatemeh Ghasemi, a Unity Gameplay Programmer with experience developing commercial and personal games in C# and Unity.
+          Currently building commercial titles at Turquoise Games, I focus on scalable gameplay mechanics and clean software engineering.
         </p>
         <div class="hero-actions">
-          <a class="btn primary" href="#projects">View Projects <i class="ph ph-arrow-down"></i></a>
+          <a class="btn primary glow" href="#projects">View Projects <i class="ph ph-arrow-down"></i></a>
           <a class="btn secondary" href="#contact">Let's talk <i class="ph ph-arrow-up-right"></i></a>
         </div>
         <div class="quick-stats">
-          <div><strong>3+</strong><span>Years Unity</span></div>
-          <div><strong>C#</strong><span>Primary language</span></div>
-          <div><strong>100+</strong><span>Physics objects</span></div>
+          <div class="stat-card"><strong>3+</strong><span>Years Unity</span></div>
+          <div class="stat-card"><strong>C#</strong><span>Primary language</span></div>
+          <div class="stat-card"><strong>100+</strong><span>Physics objects</span></div>
         </div>
       </div>
 
-      <div class="hero-visual">
-        <div class="orb orb-a"></div>
-        <div class="orb orb-b"></div>
-        <div class="physics-card">
+      <div class="hero-visual animate-fade">
+        <div class="orb orb-a float-slow"></div>
+        <div class="orb orb-b float-fast"></div>
+        <div class="physics-card glass-panel">
           <div class="card-top">
             <span>PHYSICS / GAMEPLAY</span>
             <span class="live"><i></i> LIVE</span>
           </div>
           <div class="scene">
             <div class="grid"></div>
-            <div class="ball b1"></div>
-            <div class="ball b2"></div>
-            <div class="ball b3"></div>
-            <div class="ball b4"></div>
+            <div class="ball b1 float-bounce"></div>
+            <div class="ball b2 float-bounce delay-1"></div>
+            <div class="ball b3 float-bounce delay-2"></div>
+            <div class="ball b4 float-bounce delay-3"></div>
             <div class="platform p1"></div>
             <div class="platform p2"></div>
           </div>
@@ -78,11 +76,11 @@
     </section>
 
     <section class="marquee" aria-label="Skills">
-      <div>UNITY <span>✦</span> C# <span>✦</span> GAMEPLAY SYSTEMS <span>✦</span> PHYSICS <span>✦</span> OPTIMIZATION <span>✦</span> UNITY <span>✦</span> C# <span>✦</span> GAMEPLAY SYSTEMS <span>✦</span> PHYSICS <span>✦</span> OPTIMIZATION <span>✦</span></div>
+      <div class="marquee-content">UNITY <span>✦</span> C# <span>✦</span> GAMEPLAY SYSTEMS <span>✦</span> PHYSICS <span>✦</span> OPTIMIZATION <span>✦</span> UNITY <span>✦</span> C# <span>✦</span> GAMEPLAY SYSTEMS <span>✦</span> PHYSICS <span>✦</span> OPTIMIZATION <span>✦</span></div>
     </section>
 
     <section class="section" id="projects">
-      <div class="section-head">
+      <div class="section-head reveal-head">
         <div>
           <p class="eyebrow">SELECTED WORK</p>
           <h2>Projects I’ve worked on.</h2>
@@ -90,7 +88,7 @@
         <p class="section-note">A mix of commercial, collaborative and personal Unity projects.</p>
       </div>
 
-      <article class="featured-project">
+      <article class="featured-project glass-card reveal">
         <div class="project-art match-art">
           <div class="art-label">COMMERCIAL / MOBILE</div>
           <div class="match-stack">
@@ -114,7 +112,7 @@
       </article>
 
       <div class="project-grid">
-        <article class="project-card">
+        <article class="project-card reveal">
           <div class="project-thumb hospital"><span>02</span><b>HOSPITAL<br>ESCAPE</b></div>
           <div class="project-body">
             <p class="project-role">SOLO DEVELOPER · SURVIVAL HORROR</p>
@@ -124,7 +122,7 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card reveal">
           <div class="project-thumb galaxy"><span>03</span><b>GALAXY<br>SHOOTER</b></div>
           <div class="project-body">
             <p class="project-role">SOLO DEVELOPER · SHOOTER</p>
@@ -134,7 +132,7 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card reveal">
           <div class="project-thumb bingo"><span>04</span><b>BINGO / DABORNA</b></div>
           <div class="project-body">
             <p class="project-role">GAMEPLAY DEVELOPER · CASUAL</p>
@@ -144,7 +142,7 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card reveal">
           <div class="project-thumb pointclick"><span>05</span><b>POINT &amp;<br>CLICK</b></div>
           <div class="project-body">
             <p class="project-role">UNITY · GAMEPLAY</p>
@@ -154,7 +152,7 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card reveal">
           <div class="project-thumb bubble"><span>06</span><b>BUBBLE<br>GAME JAM</b></div>
           <div class="project-body">
             <p class="project-role">SOLO PROGRAMMER · 3 DAYS</p>
@@ -164,7 +162,7 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card reveal">
           <div class="project-thumb gnosa"><span>07</span><b>GNOSA<br>2.5D</b></div>
           <div class="project-body">
             <p class="project-role">UNITY · 2.5D</p>
@@ -177,14 +175,14 @@
     </section>
 
     <section class="section dark-section" id="experience">
-      <div class="section-head">
+      <div class="section-head reveal-head">
         <div>
           <p class="eyebrow">EXPERIENCE</p>
           <h2>From idea to playable system.</h2>
         </div>
       </div>
       <div class="timeline">
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
           <div class="timeline-date">JUL 2024 — PRESENT</div>
           <div>
             <h3>Unity Gameplay Programmer</h3>
@@ -198,7 +196,7 @@
             </ul>
           </div>
         </div>
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
           <div class="timeline-date">2025 — PRESENT</div>
           <div>
             <h3>Freelance / Indie Game Developer</h3>
@@ -214,11 +212,11 @@
 
     <section class="section" id="about">
       <div class="about-grid">
-        <div>
+        <div class="reveal">
           <p class="eyebrow">ABOUT ME</p>
           <h2>Gameplay is where<br>I like to be.</h2>
         </div>
-        <div class="about-copy">
+        <div class="about-copy reveal">
           <p>
             I’m a Unity Gameplay Programmer with 3+ years of Unity development experience
             across commercial and personal projects. My main focus is building gameplay
@@ -242,28 +240,27 @@
     </section>
 
     <section class="section skills-section" id="skills">
-      <div class="section-head">
+      <div class="section-head reveal-head">
         <div>
           <p class="eyebrow">TOOLBOX</p>
           <h2>Technical skills.</h2>
         </div>
       </div>
       <div class="skills-grid">
-        <div class="skill-group"><h3>Programming</h3><p>C# · OOP · SOLID · Design Patterns · Interfaces · Events &amp; Delegates · LINQ · Python · Data Structures · JSON · Save/Load</p></div>
-        <div class="skill-group"><h3>Gameplay</h3><p>Gameplay Systems · Architecture · Physics · Game Math · FSM · AI · Interaction · Combat · Technical Problem Solving</p></div>
-        <div class="skill-group"><h3>Unity</h3><p>2D / 3D · Rigidbody · Physics Materials · Scriptable Objects · Object Pooling · Particles · UI · Animator · Timeline · Cinemachine · NavMesh · URP/HDRP</p></div>
-        <div class="skill-group"><h3>Tools</h3><p>Git · GitHub · GitLab · SourceTree · Visual Studio Code · ClickUp · Unity Profiler · Frame Debugger · Blender · Photoshop</p></div>
+        <div class="skill-group reveal"><h3>Programming</h3><p>C# · OOP · SOLID · Design Patterns · Interfaces · Events &amp; Delegates · LINQ · Python · Data Structures · JSON · Save/Load</p></div>
+        <div class="skill-group reveal"><h3>Gameplay</h3><p>Gameplay Systems · Architecture · Physics · Game Math · FSM · AI · Interaction · Combat · Technical Problem Solving</p></div>
+        <div class="skill-group reveal"><h3>Unity</h3><p>2D / 3D · Rigidbody · Physics Materials · Scriptable Objects · Object Pooling · Particles · UI · Animator · Timeline · Cinemachine · NavMesh · URP/HDRP</p></div>
+        <div class="skill-group reveal"><h3>Tools</h3><p>Git · GitHub · GitLab · SourceTree · Visual Studio Code · ClickUp · Unity Profiler · Frame Debugger · Blender · Photoshop</p></div>
       </div>
     </section>
 
-    <section class="contact-section" id="contact">
+    <section class="contact-section reveal" id="contact">
       <div>
-        <p class="eyebrow">GET IN TOUCH</p>
-        <h2>Have a game in mind?</h2>
-        <p>I'm open to Unity Gameplay Programmer opportunities and international teams.</p>
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect &amp; collaborate</h2>
       </div>
       <div class="contact-links">
-        <a href="mailto:farimahghasemi.workk@gmail.com">farimahghasemi.workk@gmail.com <i class="ph ph-arrow-up-right"></i></a>
+        <a href="mailto:farimahghasemi.workk@gmail.com">Email <i class="ph ph-arrow-up-right"></i></a>
         <a href="https://ir.linkedin.com/in/fatemeh-ghasemi-5772963b3" target="_blank" rel="noopener">LinkedIn <i class="ph ph-arrow-up-right"></i></a>
         <a href="https://github.com/FatemehGhasemiDev" target="_blank" rel="noopener">GitHub <i class="ph ph-arrow-up-right"></i></a>
         <a href="#contact">Download CV <i class="ph ph-download-simple"></i></a>
