@@ -61,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ۴. دیتابیس و منطق پنجره مودال پروژه‌ها
   const projects = {
     match: {
       kicker: "01 · COMMERCIAL / MOBILE",
@@ -77,68 +76,98 @@ document.addEventListener('DOMContentLoaded', () => {
       sections: [
         [
           "Vacuum Booster",
-          "The Vacuum Booster selects specific objects from the board and pulls them into the collection area.<br><br>" +
-          "<strong>Implementation:</strong><br>" +
-          "• Created an item selection system using C# LINQ queries to scan available objects and select the best targets based on gameplay conditions and priorities.<br>" +
-          "• Designed a priority-based filtering system to ensure the selected items matched the intended gameplay rules.<br>" +
-          "• Managed physics behavior during the pull sequence by dynamically disabling Rigidbody gravity and colliders to prevent unwanted collisions inside the item pile.<br>" +
-          "• Developed custom movement using Vector3.Lerp and Animation Curves to smoothly move selected objects into the vacuum effect and UI collection slots without visual clipping.<br><br>" +
-          "<strong>Video Link:</strong> <a href='https://drive.google.com/file/d/15xnFxGg7pTU3W7fN_87YfCkXym9Ou1qh/view?usp=drivesdk' target='_blank' rel='noopener'>Watch Mechanics Video</a>"
+          `The Vacuum Booster selects specific objects from the board and pulls them into the collection area.<br><br>
+          <strong>Implementation:</strong><br>
+          • Created an item selection system using C# LINQ queries to scan available objects and select the best targets based on gameplay conditions and priorities.<br>
+          • Designed a priority-based filtering system to ensure the selected items matched the intended gameplay rules.<br>
+          • Managed physics behavior during the pull sequence by dynamically disabling Rigidbody gravity and colliders to prevent unwanted collisions inside the item pile.<br>
+          • Developed custom movement using Vector3.Lerp and Animation Curves to smoothly move selected objects into the vacuum effect and UI collection slots without visual clipping.<br><br>
+          <div class="video-section">
+            <span class="video-title">VIDEOS</span>
+            <a href="https://drive.google.com/file/d/15xnFxGg7pTU3W7fN_87YfCkXym9Ou1qh/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
+              Gameplay <span class="arrow">↗</span>
+            </a>
+          </div>`
         ],
         [
-          "Fan Booster",
-          "The Fan Booster creates a strong wind effect that scatters items across the board.<br><br>" +
-          "<strong>Implementation:</strong><br>" +
-          "• Developed a dynamic collision filtering system to reduce unnecessary physics calculations during large-scale object movement.<br>" +
-          "• Used Unity Layer-Based Collision settings to temporarily disable item-to-item collisions while keeping collisions with level boundaries active.<br>" +
-          "• Applied physics forces and customized Physics Materials to create realistic bouncing and movement behavior.<br>" +
-          "• Restored object collisions after the effect ended to return objects back to normal physics interaction.<br><br>" +
-          "<strong>Video Link:</strong> <a href='https://drive.google.com/file/d/17v6geNaB1I-b4nRm8_wlcxqs2QmDj9DY/view?usp=drivesdk' target='_blank' rel='noopener'>Watch Mechanics Video</a>"
-        ],
-        [
-          "Gun Booster",
-          "The Gun Booster freezes gameplay time and creates a cinematic visual effect while removing selected objects from the board.<br><br>" +
-          "<strong>Implementation:</strong><br>" +
-          "• Created custom particle effects, trail effects, and UI visual elements for the booster.<br>" +
-          "• Programmed particle and trail behavior through code and synchronized effects with gameplay events.<br>" +
-          "• Developed world-space to screen-space coordinate conversion to accurately connect 3D gameplay objects with 2D UI elements.<br>" +
-          "• Implemented a full-screen vignette overlay with smooth fade-in/fade-out animations.<br>" +
-          "• Designed a coroutine-based state management system that correctly handles pause/resume situations during booster execution.<br>" +
-          "• Ensured all timers, animations, and visual states safely restore after the booster finishes.<br><br>" +
-          "<strong>Video Link:</strong> <a href='https://drive.google.com/file/d/1IIIn0Xm48r8MVSUdgUItiYFXwLZqB9h5/view?usp=drivesdk' target='_blank' rel='noopener'>Watch Mechanics Video</a>"
-        ],
-        [
-          "Fireworks Booster",
-          "The Fireworks Booster launches rockets that automatically target and clear selected objects from the board.<br><br>" +
-          "<strong>Implementation:</strong><br>" +
-          "• Developed target selection logic to identify suitable objects based on item types and gameplay priorities.<br>" +
-          "• Created a custom rocket movement system using mathematical path calculations with multiple control points.<br>" +
-          "• Designed curved projectile paths instead of simple linear movement to create more natural motion.<br>" +
-          "• Implemented sorting logic to prioritize objects placed on top of the pile, improving gameplay effectiveness.<br>" +
-          "• Created a system that balances target selection while clearing different item groups.<br><br>" +
-          "<strong>Video Link:</strong> <a href='https://drive.google.com/file/d/1oBOO8JHl2y7xzRPmXZy1Is5Y8K9A7R6o/view?usp=drivesdk' target='_blank' rel='noopener'>Watch Mechanics Video</a>"
-        ],
-        [
-          "Sandglass Booster",
-          "The Sandglass Booster adds extra time to the global countdown timer using a visual particle effect.<br><br>" +
-          "<strong>Implementation:</strong><br>" +
-          "• Developed a world-space to UI-space conversion system for particle movement from the gameplay area to the timer icon.<br>" +
-          "• Stored booster configuration data such as particle settings and movement parameters using Scriptable Objects.<br>" +
-          "• Created custom curved particle movement using coroutine-based animation.<br>" +
-          "• Implemented destination detection logic to trigger the timer update when particles reached the UI target.<br>" +
-          "• Designed the system to be easily adjustable for future balancing.<br><br>" +
-          "<strong>Video Link:</strong> <a href='https://drive.google.com/file/d/1Ha0gbrKA-rASWC_AFNPUzkf1IktXzOTc/view?usp=drivesdk' target='_blank' rel='noopener'>Watch Mechanics Video</a>"
-        ],
-        [
-          "Chief's Tool (Fireworks, Sandglass & Keys)",
-          "A progression-based reward system inspired by Match Factory mechanics.<br><br>" +
-          "<strong>Implementation:</strong><br>" +
-          "• Developed a reward system that automatically adds booster items based on player progression and winning streaks.<br>" +
-          "• Implemented Fireworks and Sandglass booster spawning directly into gameplay levels.<br>" +
-          "• Created key spawning logic and gameplay interactions.<br>" +
-          "• Developed custom curved animations using code and coroutines for key movement and reward presentation.<br><br>" +
-          "<strong>Video Link:</strong> <a href='https://drive.google.com/file/d/1CMUj2sjR_xS66eDtel5P5HpQ9rUgwEXx/view?usp=drivesdk' target='_blank' rel='noopener'>Watch Mechanics Video</a>"
-        ],
+    "Fan Booster",
+    `The Fan Booster creates a strong wind effect that scatters items across the board.<br><br>
+    <strong>Implementation:</strong><br>
+    • Developed a dynamic collision filtering system to reduce unnecessary physics calculations during large-scale object movement.<br>
+    • Used Unity Layer-Based Collision settings to temporarily disable item-to-item collisions while keeping collisions with level boundaries active.<br>
+    • Applied physics forces and customized Physics Materials to create realistic bouncing and movement behavior.<br>
+    • Restored object collisions after the effect ended to return objects back to normal physics interaction.<br><br>
+    <div class="video-section">
+      <span class="video-title">VIDEOS</span>
+      <a href="https://drive.google.com/file/d/17v6geNaB1I-b4nRm8_wlcxqs2QmDj9DY/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
+        Gameplay <span class="arrow">↗</span>
+      </a>
+    </div>`
+  ],
+  [
+    "Gun Booster",
+    `The Gun Booster freezes gameplay time and creates a cinematic visual effect while removing selected objects from the board.<br><br>
+    <strong>Implementation:</strong><br>
+    • Created custom particle effects, trail effects, and UI visual elements for the booster.<br>
+    • Programmed particle and trail behavior through code and synchronized effects with gameplay events.<br>
+    • Developed world-space to screen-space coordinate conversion to accurately connect 3D gameplay objects with 2D UI elements.<br>
+    • Implemented a full-screen vignette overlay with smooth fade-in/fade-out animations.<br>
+    • Designed a coroutine-based state management system that correctly handles pause/resume situations during booster execution.<br>
+    • Ensured all timers, animations, and visual states safely restore after the booster finishes.<br><br>
+    <div class="video-section">
+      <span class="video-title">VIDEOS</span>
+      <a href="https://drive.google.com/file/d/1IIIn0Xm48r8MVSUdgUItiYFXwLZqB9h5/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
+        Gameplay <span class="arrow">↗</span>
+      </a>
+    </div>`
+  ],
+  [
+    "Fireworks Booster",
+    `The Fireworks Booster launches rockets that automatically target and clear selected objects from the board.<br><br>
+    <strong>Implementation:</strong><br>
+    • Developed target selection logic to identify suitable objects based on item types and gameplay priorities.<br>
+    • Created a custom rocket movement system using mathematical path calculations with multiple control points.<br>
+    • Designed curved projectile paths instead of simple linear movement to create more natural motion.<br>
+    • Implemented sorting logic to prioritize objects placed on top of the pile, improving gameplay effectiveness.<br>
+    • Created a system that balances target selection while clearing different item groups.<br><br>
+    <div class="video-section">
+      <span class="video-title">VIDEOS</span>
+      <a href="https://drive.google.com/file/d/1oBOO8JHl2y7xzRPmXZy1Is5Y8K9A7R6o/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
+        Gameplay <span class="arrow">↗</span>
+      </a>
+    </div>`
+  ],
+  [
+    "Sandglass Booster",
+    `The Sandglass Booster adds extra time to the global countdown timer using a visual particle effect.<br><br>
+    <strong>Implementation:</strong><br>
+    • Developed a world-space to UI-space conversion system for particle movement from the gameplay area to the timer icon.<br>
+    • Stored booster configuration data such as particle settings and movement parameters using Scriptable Objects.<br>
+    • Created custom curved particle movement using coroutine-based animation.<br>
+    • Implemented destination detection logic to trigger the timer update when particles reached the UI target.<br>
+    • Designed the system to be easily adjustable for future balancing.<br><br>
+    <div class="video-section">
+      <span class="video-title">VIDEOS</span>
+      <a href="https://drive.google.com/file/d/1Ha0gbrKA-rASWC_AFNPUzkf1IktXzOTc/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
+        Gameplay <span class="arrow">↗</span>
+      </a>
+    </div>`
+  ],
+  [
+    "Chief's Tool (Fireworks, Sandglass & Keys)",
+    `A progression-based reward system inspired by Match Factory mechanics.<br><br>
+    <strong>Implementation:</strong><br>
+    • Developed a reward system that automatically adds booster items based on player progression and winning streaks.<br>
+    • Implemented Fireworks and Sandglass booster spawning directly into gameplay levels.<br>
+    • Created key spawning logic and gameplay interactions.<br>
+    • Developed custom curved animations using code and coroutines for key movement and reward presentation.<br><br>
+    <div class="video-section">
+      <span class="video-title">VIDEOS</span>
+      <a href="https://drive.google.com/file/d/1CMUj2sjR_xS66eDtel5P5HpQ9rUgwEXx/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
+        Gameplay <span class="arrow">↗</span>
+      </a>
+    </div>`
+  ],
         [
           "Tutorial Systems",
           "Developed the complete gameplay tutorial framework.<br><br>" +
@@ -147,11 +176,6 @@ document.addEventListener('DOMContentLoaded', () => {
           "• Used events to trigger tutorials dynamically based on gameplay conditions.<br>" +
           "• Designed the system to support different tutorial states without tightly coupling it to gameplay logic."
         ]
-      ],
-      videos: [
-        ["Gameplay", "https://drive.google.com/file/d/1WZLxT47AmUv8ogGLmPHa80y01wkSY3iP/view?usp=drivesdk"],
-        ["Vacuum Booster", "https://drive.google.com/file/d/15xnFxGg7pTU3W7fN_87YfCkXym9Ou1qh/view?usp=drivesdk"],
-        ["Fireworks", "https://drive.google.com/file/d/1oBOO8JHl2y7xzRPmXZy1Is5Y8K9A7R6o/view?usp=drivesdk"]
       ]
     },
     hospital: {
