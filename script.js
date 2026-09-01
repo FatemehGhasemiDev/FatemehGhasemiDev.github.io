@@ -237,9 +237,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const boxes = p.boxes.map(b => `<div class="case-box"><b>${b[0]}</b><span>${b[1]}</span></div>`).join("");
     const sections = p.sections.map(s => `<h4>${s[0]}</h4><p>${s[1]}</p>`).join("");
     const videos = p.videos ? `<h4>VIDEOS</h4><div class="video-links">${p.videos.map(v => `<a href="${v[1]}" target="_blank" rel="noopener">${v[0]} <i class="ph ph-arrow-up-right"></i></a>`).join("")}</div>` : "";
-    const notionBtn = p.notionLink
-      ? `<a href="${p.notionLink}" target="_blank" rel="noopener" class="notion-btn">Read Full Case Study on Notion <i class="ph ph-arrow-up-right"></i></a>`
-      : "";
 
     modalContent.innerHTML = `
       <div class="modal-kicker">${p.kicker}</div>
@@ -248,7 +245,6 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="case-grid">${boxes}</div>
       ${sections}
       ${videos}
-      ${notionBtn}
     `;
     modal.classList.add("open");
     modal.setAttribute("aria-hidden", "false");
