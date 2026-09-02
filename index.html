@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatemeh Ghasemi | Unity Game Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#090a0f',
+                        card: '#11131f',
+                        border: '#1f2438',
+                        accent: '#6366f1',
+                        accentLight: '#818cf8',
+                        muted: '#94a3b8'
+                    },
+                    fontFamily: {
+                        mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-bg text-slate-100 font-sans antialiased selection:bg-accent selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-bg/80 backdrop-blur-md border-b border-border/50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <a href="#" class="font-mono text-lg font-bold tracking-wider text-white flex items-center gap-2">
+                <span class="text-accent">&lt;/&gt;</span> FatemehGhasemi<span class="text-accent">.dev</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-accentLight transition-colors">About</a>
+                <a href="#skills" class="hover:text-accentLight transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-accentLight transition-colors">Projects</a>
+                <a href="#experience" class="hover:text-accentLight transition-colors">Experience</a>
+                <a href="#contact" class="hover:text-accentLight transition-colors">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="https://github.com/FatemehGhasemiDev" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-card border border-border hover:border-accent/50 text-slate-300 hover:text-white transition-all">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 flex-grow space-y-28">
+
+        <!-- Hero Section -->
+        <section class="flex flex-col items-start gap-6 pt-8 md:pt-16">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-accentLight font-mono text-xs uppercase tracking-widest">
+                <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                Unity Game Developer & Computer Engineer
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                Crafting Immersive <br class="hidden md:block"/>
+                <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Gameplay Mechanics & Physics
+                </span>
+            </h1>
+            
+            <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
+                Hi, I'm <strong class="text-slate-200">Fatemeh Ghasemi (Farimah)</strong>. I specialize in building robust Unity gameplay architecture, custom physics simulations, ScriptableObject-driven systems, and interactive 2D/3D game mechanics.
+            </p>
+
+            <div class="flex flex-wrap gap-4 pt-4">
+                <a href="#projects" class="px-6 py-3 rounded-lg bg-accent hover:bg-accent/90 text-white font-medium text-sm transition-all shadow-lg shadow-accent/25 flex items-center gap-2">
+                    <i data-lucide="gamepad-2" class="w-4 h-4"></i> View Projects
+                </a>
+                <a href="#contact" class="px-6 py-3 rounded-lg bg-card border border-border hover:border-slate-600 text-slate-200 font-medium text-sm transition-all flex items-center gap-2">
+                    <i data-lucide="mail" class="w-4 h-4"></i> Get in Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="h-px w-8 bg-accent"></span>
+                <span class="font-mono text-xs uppercase tracking-[0.25em] text-accentLight">Overview</span>
+            </div>
+            <h2 class="text-3xl font-bold text-white mb-6">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="md:col-span-2 bg-card p-6 rounded-xl border border-border space-y-4 text-slate-300 leading-relaxed">
+                    <p>
+                        I am a passionate <strong class="text-white">Game Developer</strong> with studio experience building mobile, casual, and 3D physics-based titles. Currently pursuing my degree in <strong class="text-white">Computer Engineering</strong>, I bridge the gap between solid software engineering principles and creative technical art.
+                    </p>
+                    <p>
+                        My expertise focuses on <strong class="text-white">C# Object-Oriented Design</strong>, modular State Machines, ScriptableObject systems, custom physics interactions, and 3D modeling workflows in Blender. I thrive on solving complex gameplay programming challenges and crafting smooth, responsive controls.
+                    </p>
+                </div>
+                <div class="bg-card p-6 rounded-xl border border-border flex flex-col justify-between space-y-4">
+                    <div>
+                        <h3 class="font-mono text-xs uppercase tracking-wider text-slate-400 mb-3">Quick Specs</h3>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center justify-between"><span class="text-slate-500">Main Engine:</span> <span class="font-semibold text-white">Unity 3D / 2D</span></li>
+                            <li class="flex items-center justify-between"><span class="text-slate-500">Languages:</span> <span class="font-semibold text-white">C#, C++, Python</span></li>
+                            <li class="flex items-center justify-between"><span class="text-slate-500">Studio Work:</span> <span class="font-semibold text-white">Caspian Game Studio</span></li>
+                            <li class="flex items-center justify-between"><span class="text-slate-500">Location:</span> <span class="font-semibold text-white">Iran</span></li>
+                        </ul>
+                    </div>
+                    <div class="p-3 bg-bg rounded-lg border border-border/60 text-xs text-slate-400 flex items-center gap-2">
+                        <i data-lucide="code-2" class="w-4 h-4 text-accent"></i>
+                        Focus: Clean Architecture & Physics Mechanics
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="h-px w-8 bg-accent"></span>
+                <span class="font-mono text-xs uppercase tracking-[0.25em] text-accentLight">Capabilities</span>
+            </div>
+            <h2 class="text-3xl font-bold text-white mb-8">Technical Stack</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-card p-6 rounded-xl border border-border space-y-4">
+                    <div class="p-3 rounded-lg bg-accent/10 border border-accent/20 w-fit text-accentLight">
+                        <i data-lucide="cpu" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Engine & Programming</h3>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i> Unity Engine (3D & 2.5D Systems)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i> C# (OOP, Async/Await, Events)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i> ScriptableObject Architecture</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i> Finite State Machines (FSM)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i> Custom Physics Mechanics</li>
+                    </ul>
+                </div>
+
+                <div class="bg-card p-6 rounded-xl border border-border space-y-4">
+                    <div class="p-3 rounded-lg bg-accent/10 border border-accent/20 w-fit text-accentLight">
+                        <i data-lucide="box" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Tools & Art Integration</h3>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i> Blender (3D Asset Modeling)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i> Git, GitLab & SourceTree Workflow</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i> VS Code & Rider Development</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i> Unity Shader Graph & Visual FX</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i> UI Event System & Canvas Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="bg-card p-6 rounded-xl border border-border space-y-4">
+                    <div class="p-3 rounded-lg bg-accent/10 border border-accent/20 w-fit text-accentLight">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Specializations</h3>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i> Physics-Based Gameplay Boosters</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i> 2.5D Fluid Character Controllers</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i> Survival Horror Interaction Mechanics</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i> Casual Match-3 & Puzzle Logic</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i> Machine Learning / RL Research</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-2">
+                <span class="h-px w-8 bg-accent"></span>
+                <span class="font-mono text-xs uppercase tracking-[0.25em] text-accentLight">Projects</span>
+            </div>
+            <h2 class="text-3xl font-bold text-white mb-8">My Game Projects</h2>
+
+            <div class="flex flex-col gap-8">
+
+                <!-- Project 1 -->
+                <div class="bg-card border border-border rounded-xl p-6 md:p-8 flex flex-col md:flex-row gap-8 items-start hover:border-slate-700 transition-all">
+                    <div class="w-full md:w-1/3 aspect-video bg-bg rounded-lg border border-border/80 flex flex-col items-center justify-center p-6 text-center group">
+                        <i data-lucide="shapes" class="w-12 h-12 text-accent mb-3 group-hover:scale-110 transition-transform"></i>
+                        <span class="font-mono text-xs text-slate-400">3D Match & Physics Systems</span>
+                    </div>
+                    <div class="w-full md:w-2/3 space-y-4">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <h3 class="text-xl font-bold text-white">3D Physics Casual Match Game</h3>
+                            <span class="px-2.5 py-1 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-xs font-mono">Unity 3D</span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Inspired by Match Factory, featuring dynamic 3D physics item spawning and custom gameplay booster mechanics (Vacuum, Fireworks, Fan, Spring, and Sandglass boosters) built with clean C# modular state machines.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded bg-bg text-slate-400 text-xs font-mono">Custom Physics</span>
+                            <span class="px-2.5 py-1 rounded bg-bg text-slate-400 text-xs font-mono">Booster Logic</span>
+                            <span class="px-2.5 py-1 rounded bg-bg text-slate-400 text-xs font-mono">Object Pooling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-card border border-border rounded-xl p-6 md:p-8 flex flex-col md:flex-row gap-8 items-start hover:border-slate-700 transition-all">
+                    <div class="w-full md:w-1/3 aspect-video bg-bg rounded-lg border border-border/80 flex flex-col items-center justify-center p-6 text-center group">
+                        <i data-lucide="gamepad" class="w-12 h-12 text-purple-400 mb-3 group-hover:scale-110 transition-transform"></i>
+                        <span class="font-mono text-xs text-slate-400">2.5D Movement Framework</span>
+                    </div>
+                    <div class="w-full md:w-2/3 space-y-4">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <h3 class="text-xl font-bold text-white">Atmospheric 2.5D Controller (Neva-inspired)</h3>
+                            <span class="px-2.5 py-1 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20 text-xs font-mono">Unity 2.5D</span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            A fluid character controller framework with custom velocity curves, state machine animation syncing, and atmospheric interaction systems for 2.5D platforming environments.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded bg-bg text-slate-400 text-xs font-mono">FSM Controller</span>
+                            <span class="px-2.5 py-1 rounded bg-bg text-slate-400 text-xs font-mono">Animation Rigging</span>
+                            <span class="px-2.5 py-1 rounded bg-bg text-slate-400 text-xs font-mono">Physics Tuning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-card border border-border rounded-xl p-6 md:p-8 flex flex-col md:flex-row gap-8 items-start hover:border-slate-700 transition-all">
+                    <div class="w-full md:w-1/3 aspect-video bg-bg rounded-lg border border-border/80 flex flex-col items-center justify-center p-6 text-center group">
+                        <i data-lucide="ghost" class="w-12 h-12 text-pink-400 mb-3 group-hover:scale-110 transition-transform"></i>
+                        <span class="font-mono text-xs text-slate-400">First-Person Survival</span>
+                    </div>
+                    <div class="w-full md:w-2/3 space-y-4">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <h3 class="text-xl font-bold text-white">Co-op Survival Horror Mechanic</h3>
+                            <span class="px-2.5 py-1 rounded bg-pink-500/10 text-pink-400 border border-pink-500/20 text-xs font-mono">Unity C#</span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            A two-person first-person survival horror game inspired by Granny. Features modular raycast item pickup, dynamic inventory management, stealth detection, and environmental object mechanics.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded bg-bg text-slate-400 text-xs font-mono">Modular Inventory</span>
+                            <span class="px-2.5 py-1 rounded bg-bg text-slate-400 text-xs font-mono">Raycast Interactions</span>
+                            <span class="px-2.5 py-1 rounded bg-bg text-slate-400 text-xs font-mono">AI Perception</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-card border border-border rounded-xl p-6 md:p-8 flex flex-col md:flex-row gap-8 items-start hover:border-slate-700 transition-all">
+                    <div class="w-full md:w-1/3 aspect-video bg-bg rounded-lg border border-border/80 flex flex-col items-center justify-center p-6 text-center group">
+                        <i data-lucide="trophy" class="w-12 h-12 text-amber-400 mb-3 group-hover:scale-110 transition-transform"></i>
+                        <span class="font-mono text-xs text-slate-400">Caspian Game Studio</span>
+                    </div>
+                    <div class="w-full md:w-2/3 space-y-4">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <h3 class="text-xl font-bold text-white">Daborna (دبرنا) Game Architecture</h3>
+                            <span class="px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-mono">Studio Project</span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Developed core gameplay loops, event-driven UI systems, and design pattern integration for the commercial casual game Daborna during my tenure at Caspian Game Studio.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded bg-bg text-slate-400 text-xs font-mono">Event-Driven UI</span>
+                            <span class="px-2.5 py-1 rounded bg-bg text-slate-400 text-xs font-mono">Design Patterns</span>
+                            <span class="px-2.5 py-1 rounded bg-bg text-slate-400 text-xs font-mono">Mobile Optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-2">
+                <span class="h-px w-8 bg-accent"></span>
+                <span class="font-mono text-xs uppercase tracking-[0.25em] text-accentLight">Background</span>
+            </div>
+            <h2 class="text-3xl font-bold text-white mb-8">Experience & Education</h2>
+
+            <div class="space-y-6 border-l-2 border-border pl-6 ml-2">
+                
+                <div class="relative group">
+                    <span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-accent border-4 border-bg"></span>
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+                        <h3 class="text-lg font-bold text-white">Unity Game Developer</h3>
+                        <span class="font-mono text-xs text-slate-400">Caspian Game Studio</span>
+                    </div>
+                    <p class="text-xs font-mono text-accentLight mb-2">Studio & Freelance Projects</p>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Worked on production-level mobile game architecture, gameplay mechanics design, state machines, and cross-functional game development workflows.
+                    </p>
+                </div>
+
+                <div class="relative group">
+                    <span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-600 border-4 border-bg"></span>
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+                        <h3 class="text-lg font-bold text-white">B.Sc. Computer Engineering</h3>
+                        <span class="font-mono text-xs text-slate-400">Islamic Azad University</span>
+                    </div>
+                    <p class="text-xs font-mono text-slate-400 mb-2">Academic Coursework</p>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Focusing on Operating Systems, Database Systems, Computer Animation Fundamentals, Systems Analysis & Design, and Machine Learning.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="scroll-mt-24 bg-card border border-border rounded-2xl p-8 md:p-12 text-center space-y-6">
+            <div class="inline-flex p-3 rounded-full bg-accent/10 text-accentLight border border-accent/20">
+                <i data-lucide="mail" class="w-6 h-6"></i>
+            </div>
+            <h2 class="text-3xl font-bold text-white">Let's Build Something Together</h2>
+            <p class="text-slate-400 max-w-xl mx-auto text-sm leading-relaxed">
+                Whether you have a game development project, a studio opening, or just want to discuss Unity architecture and 3D mechanics, feel free to reach out!
+            </p>
+            <div class="flex flex-wrap justify-center items-center gap-4 pt-2">
+                <a href="https://github.com/FatemehGhasemiDev" target="_blank" class="px-6 py-3 rounded-lg bg-bg border border-border hover:border-accent/50 text-white font-medium text-sm transition-all flex items-center gap-2">
+                    <i data-lucide="github" class="w-4 h-4 text-accent"></i> GitHub Profile
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-border/50 py-8 px-6 text-center text-xs text-slate-500 font-mono">
+        <p>&copy; 2026 Fatemeh Ghasemi. Built for GitHub Pages.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
