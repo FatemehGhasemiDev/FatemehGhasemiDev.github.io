@@ -780,10 +780,10 @@ i.ph {
   justify-content: center !important;
   gap: 8px !important;
   padding: 8px 20px !important;
-  background-color: #0f172a !important; /* پس‌زمینه تیره کپسول */
+  background-color: #0f172a !important;
   color: #e2e8f0 !important;
-  border: 1px solid #334155 !important; /* خط دور کپسول */
-  border-radius: 9999px !important; /* ایجاد حالت کاملاً گرد (Pill) */
+  border: 1px solid #334155 !important; 
+  border-radius: 9999px !important; 
   text-decoration: none !important;
   font-size: 14px !important;
   font-weight: 500 !important;
@@ -799,4 +799,9 @@ i.ph {
 
 .video-pill-btn .arrow {
   font-size: 14px !important;
+}
+
+.table-content {
+  color: #e0e0e0;
+  font-family: monospace;
 }
