@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ["My Role", "Gameplay Programmer"],
         ["Engine", "Unity Engine"],
         ["Platform", "Mobile"],
-        ["Focus", "Core Gameplay Mechanics"]
+        ["Focus", "Gameplay Systems & Minigames"]
       ],
       sections: [
         [
@@ -216,16 +216,16 @@ Players use the keys they win during core gameplay levels to unlock and remove t
   kicker: "02 · COMMERCIAL / CASUAL",
   title: "Bingo",
   intro: "A commercial casual Bingo game featuring real-time number drawing, dynamic number spawning, and intelligent AI players with custom winning logic. I worked on the core gameplay loop, event-driven UI and progression systems, overall visual polish and Game Analytics setup.",
-  boxes: [["Role", "Gameplay Developer"], ["Engine", "Unity Engine"], ["Platform", "Mobile"], ["Focus", "Core Logic & Polish"]],
+  boxes: [["Role", "Gameplay Programmer"], ["Engine", "Unity Engine"], ["Platform", "Mobile"], ["Focus", "Gameplay Logic & Analytics"]],
       sections: [
         [
     "Bingo Game",
     `<strong>Implementation:</strong><br>
     • Set up Game Analytics, JSON data structures, and GA custom events<br>
     • Developed & polished Bingo gameplay logic, number generation, and card generation systems.<br>
-    • Created UI systems, animations, reward systems, and progression mechanics.<br>
+    • Created UI systems, animations, and reward feedback flows.<br>
     • Implemented Scriptable Object-based data management.<br>
-    • Built event-driven gameplay systems and player progression logic.<br>
+    • Developed event-driven gameplay systems and player progression architecture.<br>
     • Polished animations, visual feedback, particle effects, and gameplay presentation.<br>
     • Used AI-assisted tools for sprite sheet generation and animation workflow improvements.<br><br>
     <div class="video-section">
@@ -241,7 +241,7 @@ Players use the keys they win during core gameplay levels to unlock and remove t
       kicker: "06 · GAME JAM / 3 DAYS",
       title: "Bubble Game Jam",
       intro: "A 2D arcade game developed as the solo programmer in a team with 2 game designers and an artist. Created in 3 days for a Game Jam based on the theme 'Bubble', highlighting rapid prototyping and polished gameplay logic.",
-      boxes: [["Role", "Solo Programmer"], ["Engine", "Unity Engine"], ["Platform", "Windows"], ["Focus", "Rapid Prototyping"]],
+      boxes: [["Role", "Solo Game Programmer"], ["Engine", "Unity Engine"], ["Platform", "Windows"], ["Focus", "Rapid Prototyping"]],
       sections: [
         [
     "Bubble Up Game",
@@ -264,32 +264,53 @@ Players use the keys they win during core gameplay levels to unlock and remove t
       ]
     },
     gnosa: {
-      kicker: "07 · PERSONAL / 2.5D",
+      kicker: "03 · PERSONAL / 2.5D",
       title: "Gnosa",
-      intro: "A 2.5D Unity project inspired by Neva, featuring a fluid character movement framework and animation integration.",
-      boxes: [["Role", "Unity Developer"], ["Engine", "Unity Engine"], ["Style", "2.5D"], ["Focus", "Movement Controller"]],
-      sections: [["Gameplay", "Implemented character movement and animation integration for a 2.5D environment."]]
+      intro: "Gnosa is a 2.5D narrative adventure game inspired by Neva, developed in a two-person team where I served as the sole gameplay programmer. The project focuses on fluid character movement, atmosphere-driven mechanics, and robust gameplay architecture, working closely with a game designer from early prototyping to full feature implementation.",
+      boxes: [["Role", "Solo Game Programmer"], ["Engine", "Unity Engine"], ["Platform", "Windows"], ["Focus", "Movement & Mechanics"]],
+      sections: [
+        [
+    "Gnosa Game",
+    `<strong>Implementation:</strong><br>
+    •Character Controller & Movement: Developed a responsive 2.5D physics-based movement system featuring smooth ground/air controls, acceleration curves, and environmental interactions.<br>
+    • Environmental Gameplay Mechanics: Programmed interactive puzzle elements, including movable physics rocks and a dynamic light-growth ability triggered by player inputs in specific zones.<br>
+    • Checkpoint & Revive System: Implemented a robust state-management system to handle player respawns, game-state save points, and seamless progression flow.<br>
+    • UI & Audio Framework: Built modular in-game menu systems, scene transition handlers, and integrated event-driven audio controls for sound effects and music.<br>
+    • System Architecture: Designed clean, maintainable code architectures ensuring tight synchronization between player input, gameplay mechanics, and designer-facing parameters.<br>
+    <div class="video-section">
+      <span class="video-title">Gnosa Game Video</span>
+      <a href="https://drive.google.com/drive/folders/1tH5tmkYBI9Qsgm95Z3hPW9tdGiglX-Qs?usp=sharing" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
+        Gnosa Game Video <span class="arrow">↗</span>
+      </a>
+    </div>`
+  ]
+      ]
     },
     hospital: {
       kicker: "02 · PERSONAL / SURVIVAL HORROR",
       title: "Hospital Escape",
-      intro: "A first-person survival horror project inspired by Granny, developed with a focus on reusable gameplay systems, modular item pickup, and inventory logic.",
+      intro: "A first-person and third-person survival horror project featuring dynamic camera switching, enemy AI, scripted jumpscares, and puzzle-based progression.",
       boxes: [["Role", "Solo Developer"], ["Engine", "Unity Engine"], ["Genre", "Survival Horror"], ["Focus", "Gameplay · Interaction"]],
-      sections: [["Systems Architecture", "Designed modular item detection, inventory management, and world interaction logic."]]
-    },
-    galaxy: {
-      kicker: "03 · PERSONAL / SHOOTER",
-      title: "Galaxy Shooter",
-      intro: "A personal shooter project focused on gameplay programming and building a complete playable combat loop.",
-      boxes: [["Role", "Solo Developer"], ["Engine", "Unity Engine"], ["Genre", "Shooter"], ["Focus", "Combat · Gameplay"]],
-      sections: [["Gameplay", "Implemented the core gameplay experience and supporting systems while experimenting with combat and player feedback."]]
-    },
-    pointclick: {
-      kicker: "05 · UNITY / GAMEPLAY",
-      title: "Point & Click",
-      intro: "An interactive Unity project focused on player interaction, gameplay flow and systems programming.",
-      boxes: [["Role", "Unity Developer"], ["Engine", "Unity Engine"], ["Genre", "Point & Click"], ["Focus", "Interaction · Gameplay"]],
-      sections: [["Systems", "Implemented gameplay interactions and supporting logic to create a coherent player flow."]]
+      sections: [
+        [
+    "Hospital Escape Game",
+    `<strong>Implementation:</strong><br>
+    • Developed a complete first-person and third-person character controller with camera switching.<br>
+    • Built an interaction system for environmental objects and gameplay events.<br>
+    • Created task-based progression systems using event-driven architecture.<br>
+    • Developed spider enemy AI with player detection and chasing behavior.<br>
+    • Implemented horror mechanics including jumpscares, scripted events, atmosphere systems, and environmental interactions.<br>
+    • Designed and programmed puzzle mechanics and level logic.<br>
+    • Implemented save/load systems, UI systems, audio integration, lighting, and animation workflows.<br>
+
+    <div class="video-section">
+      <span class="video-title">Hospital Escape Game Video</span>
+      <a href="https://drive.google.com/file/d/1GNs7lLm4XU1bF-pTDWlPfIOGtuvL1Wkq/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
+        Hospital Escape Game Video <span class="arrow">↗</span>
+      </a>
+    </div>`
+  ]
+      ]
     }
   };
 
