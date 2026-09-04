@@ -68,11 +68,45 @@ document.addEventListener('DOMContentLoaded', () => {
       intro: "A commercial 3D puzzle game inspired by casual titles like Match Factory. The game features hundreds of physics-based objects dropping, stacking, and interacting in real time. The player's goal is to find and match specific items before the timer runs out.",
       boxes: [
         ["My Role", "Gameplay Programmer"],
-        ["Engine", "Unity · C#"],
+        ["Engine", "Unity Engine"],
         ["Platform", "Mobile"],
         ["Focus", "Core Gameplay Mechanics"]
       ],
       sections: [
+        [
+          "Unicorn race minigame",
+          `The objective is to complete puzzle levels faster than the AI to win the race.<br><br>
+          <strong>Implementation:</strong><br>
+          • Implemened the logic to have different times set for our player AIs so that they would progress in 5 stages moving forward and the player has to beat them.<br>
+          • Implemened a data-driven system that assigns different time thresholds to each AI player. This simulates unique opponent speeds, creating a realistic and challenging racing field. <br>
+          • Developed the game logic that continuously compares the player’s actual level completion times against the AI's stage timers to dynamically update the leaderboard and determine the final winner.<br>
+<div class="video-section">
+            <span class="video-title">Unicorn race minigame Video</span>
+            <a href="https://drive.google.com/file/d/1PHfPlZe4n8mrw_d3qfjo09WJA-97NjJq/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
+              Unicorn race minigame Video<span class="arrow">↗</span>
+            </a>
+          </div>`
+        ],
+        [
+          "Key Hunter's minigame",
+          `A progression-based mini-game where players collect keys from the main gameplay to unscrew boards, unlock rewards, and advance through 5 stages.<br>
+
+Players use the keys they win during core gameplay levels to unlock and remove the screws holding the mini-game board.<br><br>
+<strong>Implementation:</strong><br>
+
+• Implemened a continuous board spawning system. Once a board is fully cleared by opening all its screws, the system automatically spawns a brand-new board for the player. I have different prefabs of the logos shapes I want to be spawned on the board and I have a method that could spawn a 4×4 or whatever int×int you want and fill it randomly with those logos.<br>
+• Implemened the system to save those logos and the colors until the board is over and done.<br>
+
+• Implemened a centralized generation logic shared across all boards. It randomly distributes different logos inside the board's slots and automatically validates that the entire board is completely filled with no empty spaces.<br>
+
+• Completing a board triggers a chest reward sequence, granting prizes to the player before transitioning them to the next board stage.<br>
+<div class="video-section">
+            <span class="video-title">Key Hunter's minigame Video</span>
+            <a href="https://drive.google.com/file/d/1q5oOFEq6nzqDUvD3yrKy3d0W5uaIW3LI/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
+              Key Hunter's minigame Video<span class="arrow">↗</span>
+            </a>
+          </div>`
+        ],
         [
           "Vacuum Booster",
           `The Vacuum Booster selects specific objects from the board and pulls them into the collection area.<br><br>
@@ -84,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="video-section">
             <span class="video-title">Vacuum Booster Video</span>
             <a href="https://drive.google.com/file/d/15xnFxGg7pTU3W7fN_87YfCkXym9Ou1qh/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
-              Gameplay <span class="arrow">↗</span>
+              Vacuum Booster Video <span class="arrow">↗</span>
             </a>
           </div>`
         ],
@@ -99,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="video-section">
       <span class="video-title">Fan Booster Video</span>
       <a href="https://drive.google.com/file/d/17v6geNaB1I-b4nRm8_wlcxqs2QmDj9DY/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
-        Gameplay <span class="arrow">↗</span>
+        Fan Booster Video <span class="arrow">↗</span>
       </a>
     </div>`
   ],
@@ -116,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="video-section">
       <span class="video-title">Gun Booster Video</span>
       <a href="https://drive.google.com/file/d/1IIIn0Xm48r8MVSUdgUItiYFXwLZqB9h5/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
-        Gameplay <span class="arrow">↗</span>
+        Gun Booster Video <span class="arrow">↗</span>
       </a>
     </div>`
   ],
@@ -132,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="video-section">
       <span class="video-title">Fireworks Booster Video</span>
       <a href="https://drive.google.com/file/d/1oBOO8JHl2y7xzRPmXZy1Is5Y8K9A7R6o/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
-        Gameplay <span class="arrow">↗</span>
+        Fireworks Booster Video <span class="arrow">↗</span>
       </a>
     </div>`
   ],
@@ -148,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="video-section">
       <span class="video-title">Sandglass Booster Video</span>
       <a href="https://drive.google.com/file/d/1Ha0gbrKA-rASWC_AFNPUzkf1IktXzOTc/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
-        Gameplay <span class="arrow">↗</span>
+        Sandglass Booster Video <span class="arrow">↗</span>
       </a>
     </div>`
   ],
@@ -163,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="video-section">
       <span class="video-title">Chief's Tool Video</span>
       <a href="https://drive.google.com/file/d/1CMUj2sjR_xS66eDtel5P5HpQ9rUgwEXx/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
-        Gameplay <span class="arrow">↗</span>
+        Chief's Tool Video <span class="arrow">↗</span>
       </a>
     </div>`
   ],
@@ -177,62 +211,84 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
       ]
     },
+    
     bingo: {
-  kicker: "04 · COMMERCIAL / CASUAL",
+  kicker: "02 · COMMERCIAL / CASUAL",
   title: "Bingo",
-  intro: "A fast-paced commercial mobile Bingo game (inspired by titles like Bingo Blitz). Focused on core gameplay algorithms, event-driven UI systems, dynamic tutorials, and performance profiling at Turquoise Games.",
-  boxes: [["Role", "Gameplay Developer"], ["Engine", "Unity · C#"], ["Platform", "Mobile"], ["Focus", "Core Logic & Event UI"]],
+  intro: "A commercial casual Bingo game featuring real-time number drawing, dynamic number spawning, and intelligent AI players with custom winning logic. I worked on the core gameplay loop, event-driven UI and progression systems, overall visual polish and Game Analytics setup.",
+  boxes: [["Role", "Gameplay Developer"], ["Engine", "Unity Engine"], ["Platform", "Mobile"], ["Focus", "Core Logic & Polish"]],
       sections: [
         [
-          "Core Gameplay Architecture",
-          `• Architected and maintained the primary Bingo gameplay loop, multi-card state machine, and dynamic number generation algorithms.<br>
-          • Designed ScriptableObject-driven data pipelines for scalable game configurations, balance settings, and progression systems.`
-        ],
-        [
-          "Event-Driven UI & Meta-Systems",
-          `• Built a decoupled, event-driven UI framework to ensure clean separation between core game logic and presentation.<br>
-          • Developed scalable leaderboard systems, dynamic player ranking logic, and interactive tutorial frameworks.`
-        ],
-        [
-          "Analytics, Performance & Polish",
-          `• Integrated player telemetry and automated analytics tracking for gameplay balance and win-rate analysis.<br>
-          • Conducted ongoing performance profiling, initialization pipeline optimization, and game juice polish across live iterations.`
-        ]
+    "Bingo Game",
+    `<strong>Implementation:</strong><br>
+    • Set up Game Analytics, JSON data structures, and GA custom events<br>
+    • Developed & polished Bingo gameplay logic, number generation, and card generation systems.<br>
+    • Created UI systems, animations, reward systems, and progression mechanics.<br>
+    • Implemented Scriptable Object-based data management.<br>
+    • Built event-driven gameplay systems and player progression logic.<br>
+    • Polished animations, visual feedback, particle effects, and gameplay presentation.<br>
+    • Used AI-assisted tools for sprite sheet generation and animation workflow improvements.<br><br>
+    <div class="video-section">
+      <span class="video-title">Bingo Game Video</span>
+      <a href="https://drive.google.com/file/d/1Ha0gbrKA-rASWC_AFNPUzkf1IktXzOTc/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
+        Bingo Game Video <span class="arrow">↗</span>
+      </a>
+    </div>`
+  ]
       ]
     },
     bubble: {
       kicker: "06 · GAME JAM / 3 DAYS",
       title: "Bubble Game Jam",
-      intro: "A three-day game jam project developed as a solo programmer, focused on rapid prototyping and delivering a complete playable experience.",
-      boxes: [["Role", "Solo Programmer"], ["Time", "3 Days"], ["Engine", "Unity · C#"], ["Focus", "Rapid Prototyping"]],
-      sections: [["Development", "Handled gameplay programming and implementation under a short deadline, prioritizing a playable and polished core loop."]]
+      intro: "A 2D arcade game developed as the solo programmer in a team with 2 game designers and an artist. Created in 3 days for a Game Jam based on the theme 'Bubble', highlighting rapid prototyping and polished gameplay logic.",
+      boxes: [["Role", "Solo Programmer"], ["Engine", "Unity Engine"], ["Platform", "Windows"], ["Focus", "Rapid Prototyping"]],
+      sections: [
+        [
+    "Bubble Up Game",
+    `<strong>Implementation:</strong><br>
+    •Developed the main player movement system where the bubble continuously floats upward and the player controls vertical movement by applying downward force.<br>
+    • Implemented a responsive dash mechanic to allow quick movement and avoid incoming obstacles.<br>
+    • Created a shrinking mechanic where the bubble gradually loses size over time, requiring players to collect oxygen sources to survive longer.<br>
+    • Programmed environmental hazards that detect collisions and instantly pop the bubble upon impact.<br>
+    • Developed a custom path-following movement system for fish obstacles, allowing enemies to move smoothly along predefined routes.<br>
+    • Implemented the final boss fight featuring a large jellyfish enemy with attack behaviors and player pursuit logic.<br>
+    • Managed gameplay states and enemy behavior transitions to create a challenging but consistent boss encounter.<br>
+    • Integrated gameplay feedback, animations, and visual effects to improve the overall game feel.<br><br>
+    <div class="video-section">
+      <span class="video-title">Bubble Up Game Video</span>
+      <a href="https://drive.google.com/file/d/1-6ipaoDFgjELWgqQpmMwl1h5cXdPoC_B/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
+        Bubble Up Game Video <span class="arrow">↗</span>
+      </a>
+    </div>`
+  ]
+      ]
     },
     gnosa: {
       kicker: "07 · PERSONAL / 2.5D",
       title: "Gnosa",
       intro: "A 2.5D Unity project inspired by Neva, featuring a fluid character movement framework and animation integration.",
-      boxes: [["Role", "Unity Developer"], ["Engine", "Unity · C#"], ["Style", "2.5D"], ["Focus", "Movement Controller"]],
+      boxes: [["Role", "Unity Developer"], ["Engine", "Unity Engine"], ["Style", "2.5D"], ["Focus", "Movement Controller"]],
       sections: [["Gameplay", "Implemented character movement and animation integration for a 2.5D environment."]]
     },
     hospital: {
       kicker: "02 · PERSONAL / SURVIVAL HORROR",
       title: "Hospital Escape",
       intro: "A first-person survival horror project inspired by Granny, developed with a focus on reusable gameplay systems, modular item pickup, and inventory logic.",
-      boxes: [["Role", "Solo Developer"], ["Engine", "Unity · C#"], ["Genre", "Survival Horror"], ["Focus", "Gameplay · Interaction"]],
+      boxes: [["Role", "Solo Developer"], ["Engine", "Unity Engine"], ["Genre", "Survival Horror"], ["Focus", "Gameplay · Interaction"]],
       sections: [["Systems Architecture", "Designed modular item detection, inventory management, and world interaction logic."]]
     },
     galaxy: {
       kicker: "03 · PERSONAL / SHOOTER",
       title: "Galaxy Shooter",
       intro: "A personal shooter project focused on gameplay programming and building a complete playable combat loop.",
-      boxes: [["Role", "Solo Developer"], ["Engine", "Unity · C#"], ["Genre", "Shooter"], ["Focus", "Combat · Gameplay"]],
+      boxes: [["Role", "Solo Developer"], ["Engine", "Unity Engine"], ["Genre", "Shooter"], ["Focus", "Combat · Gameplay"]],
       sections: [["Gameplay", "Implemented the core gameplay experience and supporting systems while experimenting with combat and player feedback."]]
     },
     pointclick: {
       kicker: "05 · UNITY / GAMEPLAY",
       title: "Point & Click",
       intro: "An interactive Unity project focused on player interaction, gameplay flow and systems programming.",
-      boxes: [["Role", "Unity Developer"], ["Engine", "Unity · C#"], ["Genre", "Point & Click"], ["Focus", "Interaction · Gameplay"]],
+      boxes: [["Role", "Unity Developer"], ["Engine", "Unity Engine"], ["Genre", "Point & Click"], ["Focus", "Interaction · Gameplay"]],
       sections: [["Systems", "Implemented gameplay interactions and supporting logic to create a coherent player flow."]]
     }
   };
