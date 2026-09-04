@@ -20,6 +20,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -88,17 +89,29 @@ button {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
 }
 
+/* --- Fixed Navbar Component --- */
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   height: 76px;
+  background: rgba(10, 10, 11, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, .07);
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: var(--max);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: var(--max);
-  margin: auto;
-  padding: 0 24px;
-  border-bottom: 1px solid rgba(255, 255, 255, .07);
-  position: relative;
-  z-index: 5;
 }
 
 .brand {
@@ -134,7 +147,7 @@ button {
   min-height: 720px;
   max-width: var(--max);
   margin: auto;
-  padding: 100px 24px 80px;
+  padding: 140px 24px 80px; /* اضافه شدن پدینگ بالا برای جلوگیری از تداخل با هدر */
   display: grid;
   grid-template-columns: 1.05fr .95fr;
   align-items: center;
@@ -421,7 +434,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px; /* ایجاد فاصله استاندارد دور ویدیو */
+  padding: 16px;
 }
 
 .project-art {
@@ -447,7 +460,6 @@ h1 {
   filter: brightness(0.9);
   transition: transform 0.4s ease, filter 0.4s ease;
 }
-
 
 .featured-project:hover .project-media,
 .project-card:hover .project-media {
@@ -568,7 +580,7 @@ footer {
 }
 
 /* --- Modal --- */
-.modal { position: fixed; inset: 0; z-index: 100; display: none; }
+.modal { position: fixed; inset: 0; z-index: 1100; display: none; }
 .modal.open { display: block; }
 .modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.78); backdrop-filter: blur(8px); }
 .modal-window {
@@ -681,7 +693,7 @@ i.ph {
 
 /* --- Responsiveness --- */
 @media(max-width:900px) {
-  .hero { grid-template-columns: 1fr; padding-top: 70px; }
+  .hero { grid-template-columns: 1fr; padding-top: 110px; }
   .hero-visual { height: 430px; }
   .featured-project { grid-template-columns: 1fr; }
   .project-art { min-height: 390px; }
@@ -697,7 +709,7 @@ i.ph {
 @media(max-width:560px) {
   .nav { height: 66px; }
   .nav-cv { display: none; }
-  .hero { min-height: auto; padding-top: 65px; }
+  .hero { min-height: auto; padding-top: 100px; }
   .hero h1 { font-size: 52px; }
   .hero-text { font-size: 15px; }
   .quick-stats { gap: 18px; margin-top: 45px; }
@@ -714,9 +726,10 @@ i.ph {
   .modal-window h2 { font-size: 35px; }
   .case-grid { grid-template-columns: 1fr; }
 }
+
 .case-box span {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-  color: #f1f5f9 !important; /* کنتراست بالا و روشن */
+  color: #f1f5f9 !important;
   font-size: 14px !important;
   font-weight: 500 !important;
   opacity: 1 !important;
@@ -734,7 +747,7 @@ i.ph {
   color: #ffffff !important;
   font-size: 18px !important;
   font-weight: 700 !important;
-  text-shadow: none !important; /* حذف تاری و سایه رنگی */
+  text-shadow: none !important;
   letter-spacing: 0.3px !important;
   margin-top: 24px;
   margin-bottom: 12px;
@@ -743,22 +756,14 @@ i.ph {
 #modalContent p, 
 #modalContent li {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-  color: #cbd5e1 !important; /* خاکستری روشن استاندارد برای مطالعه راحت */
+  color: #cbd5e1 !important;
   font-size: 14.5px !important;
   line-height: 1.7 !important;
 }
 
-.video-title {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-  color: #38bdf8 !important;
-  text-shadow: none !important;
-  font-size: 12px !important;
-  font-weight: 700 !important;
-  letter-spacing: 1px !important;
-}
 .video-section {
   display: flex !important;
-  flex-direction: column !important; /* قرارگیری عنوان بالا و دکمه زیر آن */
+  flex-direction: column !important;
   align-items: flex-start !important;
   gap: 10px !important;
   margin-top: 20px !important;
@@ -766,7 +771,7 @@ i.ph {
 
 .video-title {
   display: block !important;
-  color: #38bdf8 !important; /* رنگ آبی روشن یا سفید طبق تم شما */
+  color: #38bdf8 !important;
   font-family: monospace, system-ui, sans-serif !important;
   font-size: 13px !important;
   font-weight: 800 !important;
