@@ -1,90 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Fatemeh Ghasemi — Unity Gameplay Programmer and Mobile Game Developer.">
   <title>Fatemeh Ghasemi | Unity Programmer</title>
+
+  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div id="preloader">
+  <!-- Preloader & Ambient Effects -->
+  <div id="preloader" aria-hidden="true">
     <div class="loader-ball"></div>
     <div class="loader-text">LOADING...</div>
   </div>
 
-  <div class="noise"></div>
+  <div class="noise" aria-hidden="true"></div>
 
-  <header class="nav">
-    <a class="brand" href="#top">FG<span>.</span></a>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="nav-cv" href="#contact">Download CV <i class="ph ph-download-simple"></i></a>
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="brand" href="#top" aria-label="Fatemeh Ghasemi Portfolio">
+        <span class="brand-symbol">&lt;/&gt;</span> Fatemeh Ghasemi<span class="brand-dot"></span>
+      </a>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation" aria-controls="primary-navigation"
+        aria-expanded="false">
+        <i class="ph ph-list toggle-icon"></i>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="primary-navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#credentials" class="nav-link">Certificates</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="cv.pdf" class="nav-cv" download target="_blank" rel="noopener noreferrer">
+          Download CV <i class="ph ph-download-simple"></i>
+        </a>
+      </nav>
+    </div>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="hero-copy animate-up">
         <h1>I’m Fatemeh Ghasemi<br><em>Game Programmer & Developer</em></h1>
-        <p class="hero-text">
-          I have experience developing commercial and personal games in C# and Unity.
-          Currently building commercial titles at Turquoise Games, I focus on scalable gameplay mechanics and clean software engineering.
+        <p class="hero-text">Game Developer & Unity Specialist. Engineering scalable mechanics and clean code for commercial games.
         </p>
         <div class="hero-actions">
           <a class="btn primary glow" href="#projects">View Projects <i class="ph ph-arrow-down"></i></a>
           <a class="btn secondary" href="#contact">Let's talk <i class="ph ph-arrow-up-right"></i></a>
         </div>
-        <div class="quick-stats">
-          <div class="stat-card"><strong>4+</strong><span>Years Of Unity Experience</span></div>
-          <div class="stat-card"><strong>6+</strong><span>Years Of Programming Experience</span></div>
-          <div class="stat-card"><strong>3+</strong><span>Commercial Game Projects</span></div>
-        </div>
       </div>
-
       <div class="hero-visual animate-fade">
         <div class="orb orb-a float-slow"></div>
         <div class="orb orb-b float-fast"></div>
-        <div class="physics-card glass-panel">
-          <div class="card-top">
-            <span class="live"><i></i> LIVE</span>
-          </div>
-          <div class="scene">
-            <div class="grid"></div>
-            <div class="ball b1 float-bounce"></div>
-            <div class="ball b2 float-bounce delay-1"></div>
-            <div class="ball b3 float-bounce delay-2"></div>
-            <div class="ball b4 float-bounce delay-3"></div>
-            <div class="platform p1"></div>
-            <div class="platform p2"></div>
-          </div>
-          <div class="card-bottom">
-          </div>
+        <div class="physics-card tablet-device">
+  <div class="card-top">
+    <span class="live"><i></i>PC/TABLET INTERFACE</span>
+    <span class="device-tag">UNITY APP</span>
+  </div>
+  
+  <!-- صفحه نمایش تبلت که آیکون‌ها روی آن قرار می‌گیرند -->
+  <div class="scene tablet-screen">
+    <div class="apps-grid">
+
+     <a href="#project-match" class="app-icon-item">
+        <div class="app-icon">
+          <img src="icons/MatchFactory.jpg" alt="Match Factory Game">
         </div>
+        <span>Match Factory</span>
+      </a>
+
+      <a href="#project-bingo" class="app-icon-item">
+        <div class="app-icon">
+          <img src="icons/BingoIcon.png" alt="Bingo Game">
+        </div>
+        <span>Bingo</span>
+      </a>
+
+      <a href="#project-gnosa" class="app-icon-item">
+        <div class="app-icon">
+          <img src="icons/GnosaIcon.PNG" alt="Gnosa Game">
+        </div>
+        <span>Gnosa</span>
+      </a>
+
+      <a href="#project-hospital" class="app-icon-item">
+        <div class="app-icon">
+          <img src="icons/HospitalEscape.png" alt="Hospital Escape Game">
+        </div>
+        <span>Hospital Escape</span>
+      </a>
+
+       <a href="#project-bubble" class="app-icon-item">
+        <div class="app-icon">
+          <img src="icons/BubbleUp.png" alt="Bubble Up Game">
+        </div>
+        <span>Bubble Up</span>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="card-bottom">
+    <span class="muted">Installed Apps</span>
+    <span class="live">v1.0.4</span>
+  </div>
+</div>
       </div>
     </section>
 
     <section class="section" id="projects">
       <div class="section-head reveal-head">
         <div>
-          <p class="eyebrow">SELECTED PROJECTS</p>
+          <h2 class="eyebrow" style="font-size: 1.5rem; font-weight: bold;">SELECTED PROJECTS</h2>
           <h1>Featured Game Projects</h1>
         </div>
-        <p class="section-note">A showcase of commercial titles, collaborative indie projects, and personal gameplay explorations built in Unity & C#.</p>
+        <p class="section-note">A showcase of commercial titles, collaborative indie projects, and personal gameplay
+          explorations built in Unity & C#.</p>
       </div>
 
       <!-- Featured Project: Match Factory -->
-      <article class="featured-project glass-card reveal">
+      <article id="project-match" class="featured-project glass-card reveal">
         <div class="project-art">
-          <div class="art-label">COMMERCIAL / MOBILE</div>
           <video class="project-media" autoplay loop muted playsinline poster="videos/match-factory-gameplay.jpg">
             <source src="Videos/match-factory-gameplay.mp4" type="video/mp4">
           </video>
@@ -92,14 +145,15 @@
         </div>
 
         <div class="featured-content">
-          <div class="project-meta"><span>01</span><span>Gameplay Programmer</span><span>COMMERCIAL / MOBILE</span></div>
+          <div class="project-meta"><span>01</span><span>Gameplay Programmer</span><span>COMMERCIAL / MOBILE</span>
+          </div>
           <h3>Match Factory-inspired<br>3D Puzzle</h3>
           <p>
             A commercial 3D puzzle game with hundreds of physics-based objects dropping,
             stacking and interacting in real time. I worked on the core gameplay loop,
             boosters, tutorials, mini-games and physics optimization.
           </p>
-          
+
           <div class="tags">
             <span>Minigames</span>
             <span>Physics Optimization</span>
@@ -116,69 +170,68 @@
       <!-- Project Grid -->
       <div class="project-grid">
 
-        <!-- 02: Bingo / Daborna -->
-        <article class="project-card reveal">
+        <!-- 02: Bingo -->
+        <article id="project-bingo" class="project-card reveal">
           <div class="project-thumb bingo">
             <video class="project-media" autoplay loop muted playsinline poster="videos/bingo-poster.jpg">
               <source src="videos/bingo.mp4" type="video/mp4">
             </video>
-            <span>02</span><b>BINGO</b>
+            <span>02 GAMEPLAY PROGRAMMER · COMMERCIAL / MOBILE</span><b>BINGO</b>
           </div>
           <div class="project-body">
-            <p class="project-role">GAMEPLAY PROGRAMMER · CASUAL / MOBILE</p>
             <h3>Bingo</h3>
             <p>
-              A commercial casual mobile Bingo game (inspired by titles like Bingo Blitz). Focused on core gameplay algorithms, event-driven UI systems, dynamic tutorials, and polish at Turquoise Games.
+              A commercial casual mobile Bingo game (inspired by titles like Bingo Blitz). Focused on core gameplay
+              algorithms, event-driven UI systems, dynamic tutorials, and polish at Turquoise Games.
             </p>
             <button class="text-link" data-project="bingo">View project <i class="ph ph-arrow-right"></i></button>
           </div>
         </article>
 
-         <!-- 03: Gnosa 2.5D -->
-        <article class="project-card reveal">
+        <!-- 03: Gnosa 2.5D -->
+        <article id="project-gnosa" class="project-card reveal">
           <div class="project-thumb gnosa">
             <video class="project-media" autoplay loop muted playsinline poster="videos/gnosa-poster.jpg">
               <source src="videos/gnosa-2.5d.mp4" type="video/mp4">
             </video>
-            <span>03</span><b>GNOSA</b>
+            <span>03 SOLE GAMEPLAY PROGRAMMER . 2.5D ADVENTURE</span><b>GNOSA</b>
           </div>
           <div class="project-body">
-            <p class="project-role">SOLE GAMEPLAY PROGRAMMER . 2.5D ADVENTURE</p>
             <h3>Gnosa</h3>
-            <p>A 2.5D narrative adventure featuring responsive physics-based movement, dynamic environmental interactions, and custom revive/checkpoint architecture. Developed as sole gameplay programmer.</p>
+            <p>A 2.5D narrative adventure featuring responsive physics-based movement, dynamic environmental
+              interactions, and custom revive/checkpoint architecture. Developed as sole gameplay programmer.</p>
             <button class="text-link" data-project="gnosa">View project <i class="ph ph-arrow-right"></i></button>
           </div>
         </article>
 
-         <!-- 04: Bubble Game Jam -->
-        <article class="project-card reveal">
+        <!-- 04: Bubble Game Jam -->
+        <article id="project-bubble" class="project-card reveal">
           <div class="project-thumb bubble">
             <video class="project-media" autoplay loop muted playsinline poster="videos/bubble-poster.jpg">
               <source src="videos/Bubble Up Gameplay.mp4" type="video/mp4">
             </video>
-            <span>04</span><b>BUBBLE<br>GAME JAM</b>
+            <span>04 SOLO PROGRAMMER · 3-DAY GAME JAM</span><b>BUBBLE<br>GAME JAM</b>
           </div>
           <div class="project-body">
-            <p class="project-role">SOLO PROGRAMMER · 3-DAY GAME JAM</p>
             <h3>Bubble Game Jam</h3>
-            <p>A three-day game jam project demonstrating rapid prototyping and end-to-end gameplay implementation and team collaboration.</p>
+            <p>A three-day game jam project demonstrating rapid prototyping and end-to-end gameplay implementation and
+              team collaboration.</p>
             <button class="text-link" data-project="bubble">View project <i class="ph ph-arrow-right"></i></button>
           </div>
         </article>
 
-
         <!-- 05: Hospital Escape -->
-        <article class="project-card reveal">
+        <article id="project-hospital" class="project-card reveal">
           <div class="project-thumb hospital">
             <video class="project-media" autoplay loop muted playsinline poster="videos/hospital-poster.jpg">
-              <source src="videos/hospital-escape.mp4" type="video/mp4">
+              <source src="videos/HospitalEscape.mp4" type="video/mp4">
             </video>
-            <span>05</span><b>HOSPITAL<br>ESCAPE</b>
+            <span>05 SOLO DEVELOPER · SURVIVAL HORROR</span><b>HOSPITAL<br>ESCAPE</b>
           </div>
           <div class="project-body">
-            <p class="project-role">SOLO DEVELOPER · SURVIVAL HORROR</p>
             <h3>Hospital Escape</h3>
-            <p>A survival horror project inspired by Granny, built with first-person/third-person camera switching, modular item interaction, and enemy AI logic.</p>
+            <p>A survival horror project inspired by Granny, built with first-person/third-person camera switching,
+              modular item interaction, and enemy AI logic.</p>
             <button class="text-link" data-project="hospital">View project <i class="ph ph-arrow-right"></i></button>
           </div>
         </article>
@@ -189,23 +242,20 @@
     <section class="section dark-section" id="experience">
       <div class="section-head reveal-head">
         <div>
-          <p class="eyebrow">EXPERIENCE</p>
-          <h2>From idea to playable system.</h2>
+          <h2 class="eyebrow" style="font-size: 1.5rem; font-weight: bold;">WORK EXPERIENCE</h2>
         </div>
       </div>
       <div class="timeline">
         <div class="timeline-item reveal">
           <div class="timeline-date">JUL 2024 — PRESENT</div>
           <div>
-            <h3>Unity Gameplay Programmer</h3>
+            <h3>Game Programmer</h3>
             <p class="muted">Turquoise Games Studio</p>
             <ul>
-              <li>Developed core gameplay systems and mechanics for commercial Unity mobile games, including titles like <strong>Daborna</strong> and Bingo.</li>
-              <li>Implemented physics-heavy gameplay supporting hundreds of active Rigidbody objects.</li>
-              <li>Built boosters, tutorials, mini-games, progression systems and reusable event-driven frameworks.</li>
-              <li>Profiled CPU bottlenecks with Unity Profiler and improved physics, collisions and Rigidbody behavior.</li>
-              <li>Worked with designers, artists, animators, QA and programmers using Git and ClickUp.</li>
-            </ul>
+  <li>Developed core gameplay systems and mechanics for commercial Unity mobile games, including <strong>Match Factory</strong> and <strong>Bingo</strong>.</li>
+<li>Implemented gameplay features including boosters, progression systems, tutorials, AI behaviors, physics-based interactions, reward mechanics, and minigames, along with Game Analytics and JSON-based data systems.</li>
+  <li>Collaborated closely with designers, artists, animators, QA, and programmers throughout development, using Git and ClickUp for version control and task management.</li>
+</ul>
           </div>
         </div>
         <div class="timeline-item reveal">
@@ -214,74 +264,289 @@
             <h3>Freelance / Indie Game Developer</h3>
             <p class="muted">Two-person team · Survival Horror</p>
             <ul>
-              <li>Developing a first-person survival horror game inspired by Granny, focusing on modular inventory and world interaction logic.</li>
-              <li>Working closely with a 2D artist on a custom 2.5D character controller and fluid movement framework.</li>
+              <li>Developing a first-person survival horror game inspired by Granny, focusing on modular inventory and
+                world interaction logic.</li>
+              <li>Working closely with a 2D artist on a custom 2.5D character controller and fluid movement framework.
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="about-grid">
-        <div class="reveal">
-          <p class="eyebrow">ABOUT ME</p>
-          <h2>Gameplay is where<br>I like to be.</h2>
+<section class="section" id="about">
+  <div class="about-grid">
+    
+    <!-- ستون سمت چپ -->
+    <div class="reveal about-left-col">
+      <h2 class="eyebrow" style="font-size: 1.5rem; font-weight: bold;">ABOUT ME</h2>
+      
+      <div class="profile-pic-wrapper">
+        <img src="icons/me.jpg" alt="Fatemeh Ghasemi" class="profile-pic">
+      </div>
+    </div>
+
+    <!-- دکمه ایمیل با قابلیت کپی -->
+<button type="button" class="email-btn" id="aboutEmailBtn" data-email="farimahghasemi.workk@gmail.com">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+  <span id="aboutEmailText">farimahghasemi.workk@gmail.com</span>
+</button>
+    </div>
+
+    <!-- ستون سمت راست (بدون عکس) -->
+    <div class="about-copy reveal">
+    </br>
+<p class="about-text">        I’m a Unity Gameplay Programmer with 4+ years of experience working on commercial and personal projects.
+        I mainly work on gameplay systems, mechanics, physics, and the technical problems that come with making a game work smoothly.
+      </p>
+<p class="about-text">        I enjoy figuring out how things should work, building them in C#, and debugging them when they don’t.
+        I’m particularly interested in physics, game math, system design, AI, and performance.
+        I’m also comfortable working independently or working closely with designers and artists to turn ideas into playable features.
+        Alongside Unity and C#, I’m learning Python and exploring machine learning to see how these technologies can be useful in game development.
+      </p>
+    <!-- کارت‌های آمار سریع (Quick Stats) -->
+      <div class="about-stats">
+        <div class="stat-item">
+          <h3>4+</h3>
+          <span>Years Of Unity<br>Experience</span>
         </div>
-        <div class="about-copy reveal">
-          <p>
-            I’m a Unity Gameplay Programmer with 3+ years of Unity development experience
-            across commercial and personal projects. My main focus is building gameplay
-            systems that are responsive, maintainable and performant.
-          </p>
-          <p>
-            I enjoy the technical side of games: physics, system design, game math,
-            debugging and finding practical solutions to difficult gameplay problems. 
-            Beyond C#, I also explore Python and machine learning applications within Visual Studio Code 
-            to broaden my technical perspective. I’m comfortable working independently or 
-            collaborating closely with artists and designers.
-          </p>
-          <div class="about-facts">
-            <div><b>Education</b><span>B.Sc. Computer Engineering (Term 5) · Azad University</span></div>
-            <div><b>Languages</b><span>English (C2) · German (A2) · Persian (Native)</span></div>
-            <div><b>Unity</b><span>2D / 3D · Mobile · PC</span></div>
-            <div><b>C#</b><span>OOP · SOLID · Patterns · Events</span></div>
+        <div class="stat-item">
+          <h3>6+</h3>
+          <span>Years Of Programming<br>Experience</span>
+        </div>
+        <div class="stat-item">
+          <h3>2+</h3>
+          <span>Commercial Game<br>Projects</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- Tools Section -->
+    <section class="section tools-section" id="tools">
+      <div class="section-head reveal-head">
+        <div>
+          <h2 class="eyebrow" style="font-size: 1.2rem; font-weight: bold;">TOOLS</h2>
+          <h2>Tools I Use</h2>
+        </div>
+      </div>
+
+      <div class="tools-bento">
+        <div class="bento-card spotlight">
+          <span class="card-label">Game Engines</span>
+          <div class="tools-list">
+            <div class="pill-badge">
+              <img src="icons/unity.svg" alt="Unity" />
+              <span>Unity</span>
+            </div>
+            <div class="pill-badge">
+              <img src="icons/unreal.svg" alt="Unreal" />
+              <span>Unreal Engine</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bento-card">
+          <span class="card-label">Development</span>
+          <div class="tools-list">
+            <div class="pill-badge">
+              <img src="icons/visual-studio.svg" alt="Visual Studio" />
+              <span>Visual Studio</span>
+            </div>
+            <div class="pill-badge">
+              <img src="icons/vscode.svg" alt="VSCode" />
+              <span>VSCode</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bento-card wide">
+          <span class="card-label">Version Control & Workflow</span>
+          <div class="pill-group">
+            <span class="pill-badge"><img src="icons/git.svg" alt="Git" /> Git</span>
+            <span class="pill-badge"><img src="icons/github.svg" alt="GitHub" /> GitHub</span>
+            <span class="pill-badge"><img src="icons/gitlab.svg" alt="GitLab" /> GitLab</span>
+            <span class="pill-badge"><img src="icons/sourcetree.svg" alt="SourceTree" /> SourceTree</span>
+            <span class="pill-badge"><img src="icons/clickup.svg" alt="ClickUp" /> ClickUp</span>
+          </div>
+        </div>
+
+        <div class="bento-card">
+          <span class="card-label">3D & Art</span>
+          <div class="tools-list">
+            <div class="pill-badge">
+              <img src="icons/blender.svg" alt="Blender" />
+              <span>Blender</span>
+            </div>
+            <div class="pill-badge">
+              <img src="icons/photoshop.svg" alt="Photoshop" />
+              <span>Photoshop</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section skills-section" id="skills">
-      <div class="section-head reveal-head">
-        <div>
-          <p class="eyebrow">TOOLBOX</p>
-          <h2>Technical skills.</h2>
+  <!-- Credentials Section -->
+<section class="credentials-section" id="credentials">
+    <div class="section-head reveal-head" style="display: flex; flex-direction: column; align-items: flex-start; gap: 0;">
+      <h2 class="eyebrow" style="font-size: 1.5rem; font-weight: bold;">CREDENTIALS</h2>
+      <h2>Education & Certificates</h2>
+      <p class="section-note" style="max-width: 100%; margin-top: 15px;">Academic background, language proficiencies, and verified professional certificates.</p>
+    </div>
+
+  <div class="credentials-container">
+    <!-- ردیف بالا: Education و Languages در کنار هم -->
+    <div class="cred-top-row">
+      <!-- Education Card -->
+      <div class="cred-card">
+        <div class="card-header">
+          <span class="card-icon">🎓</span>
+          <h3>Education</h3>
+        </div>
+        <div class="card-body">
+          <div class="timeline-item">
+            <span class="timeline-date">2024 - Present</span>
+            <h4 class="item-title">B.Sc. Computer Engineering</h4>
+            <p class="item-sub">IAU Azad University</p>
+          </div>
         </div>
       </div>
-      <div class="skills-grid">
-        <div class="skill-group reveal"><h3>Programming</h3><p>C# · OOP · SOLID · Design Patterns · Interfaces · Events &amp; Delegates · LINQ · Python · Data Structures · JSON · Save/Load</p></div>
-        <div class="skill-group reveal"><h3>Gameplay</h3><p>Gameplay Systems · Architecture · Physics · Game Math · FSM · AI · Interaction · Combat · Technical Problem Solving</p></div>
-        <div class="skill-group reveal"><h3>Unity</h3><p>2D / 3D · Rigidbody · Physics Materials · Scriptable Objects · Object Pooling · Particles · UI · Animator · Timeline · Cinemachine · NavMesh · URP/HDRP</p></div>
-        <div class="skill-group reveal"><h3>Tools</h3><p>Git · GitHub · GitLab · SourceTree · Visual Studio Code · ClickUp · Unity Profiler · Frame Debugger · Blender · Photoshop</p></div>
+
+      <!-- Languages Card -->
+      <div class="cred-card">
+        <div class="card-header">
+          <span class="card-icon">🌐</span>
+          <h3>Languages</h3>
+        </div>
+        <div class="card-body">
+          <div class="lang-pills">
+            <div class="lang-row">
+              <span class="lang-name">English</span>
+              <span class="lang-lvl">C2</span>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">German</span>
+              <span class="lang-lvl">A2</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+
+    <!-- ردیف پایین: Certificates تمام‌عرض -->
+    <div class="cred-bottom-row">
+      <div class="cred-card certificates-card">
+        <div class="card-header">
+          <span class="card-icon">📜</span>
+          <h3>Certificates</h3>
+        </div>
+        <div class="card-body">
+          <div class="cert-grid-wide">
+            <div class="cert-card-visual" onclick="openCertModal('Certificate/GameCertificate.jpeg', 'https://mftplus.com/verifycertificate?auto=1&nationalcode=0150954212&code=1549659')">
+              <div class="cert-thumb">
+                <img src="Certificate/GameCertificate.jpeg" alt="Unity Certificate" />
+              </div>
+              <div class="cert-details">
+                <h4>Unity Game Engine Development</h4>
+                <p>Tehran Institute of Technology · 2022</br>Completed 70-hour intensive course with a score of 100/100</p>
+                <div class="cert-actions">
+                  <a href="https://mftplus.com/verifycertificate?auto=1&nationalcode=0150954212&code=1549659" target="_blank" class="cert-link-btn" onclick="event.stopPropagation();">Verify ↗</a>
+                  <a href="Certificate/GameCertificate.jpeg" download="Fatemeh_Unity_Certificate" class="cert-link-btn" onclick="event.stopPropagation();">Show ↗</a>
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-visual" onclick="openCertModal('Certificate/PhotoshopCertificate.jpeg', 'https://mftplus.com/verifycertificate?auto=1&nationalcode=0150954212&code=1692537')">
+              <div class="cert-thumb">
+                <img src="Certificate/PhotoshopCertificate.jpeg" alt="Photoshop Certificate" />
+              </div>
+              <div class="cert-details">
+                <h4>Adobe Photoshop Beginner To Advanced</h4>
+                <p>Tehran Institute of Technology · 2024</br>Completed 50-hour intensive course with a score 88/100</p>
+                <div class="cert-actions">
+                  <a href="https://mftplus.com/verifycertificate?auto=1&nationalcode=0150954212&code=1692537" target="_blank" class="cert-link-btn" onclick="event.stopPropagation();">Verify ↗</a>
+                  <a href="Certificate/PhotoshopCertificate.jpeg" download="Fatemeh_Photoshop_Certificate.jpg" class="cert-link-btn" onclick="event.stopPropagation();">Show ↗</a>
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-visual" onclick="openCertModal('Certificate/EF_SET_Certificate.jpg', 'file:///C:/Users/Khozbale/Documents/MyPortfolio/file:///C:/Users/Khozbale/Documents/MyPortfolio/index.html#about1')">
+              <div class="cert-thumb">
+                <img src="Certificate/EF_SET_Certificate.jpg" alt="EF SET Certificate" />
+              </div>
+              <div class="cert-details">
+                <h4>EF SET English Certificate</h4>
+                <p>The EF SET Organization · 2023</p>
+                <div class="cert-actions">
+                  <a href="file:///C:/Users/Khozbale/Documents/MyPortfolio/url?id=11" target="_blank" class="cert-link-btn" onclick="event.stopPropagation();">Verify ↗</a>
+                  <a href="Certificate/EF_SET_Certificate.pdf" download="Fatemeh_EF_SET_Certificate.jpg" class="cert-link-btn" onclick="event.stopPropagation();">Show ↗</a>
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-visual" onclick="openCertModal('Certificate/Iran_Europe_Language_Institute_English_Certificate.jpg', 'https://mftplus.com/verifycertificate?auto=1&nationalcode=0150954212&code=1692537')">
+              <div class="cert-thumb">
+                <img src="Certificate/Iran_Europe_Language_Institute_English_Certificate.jpg" alt="English Certificate" />
+              </div>
+              <div class="cert-details">
+                <h4>Iran Europe Language Institute English Certificate</h4>
+                <p>Iran Europe Language Institute · 2024</p>
+                <div class="cert-actions">
+                  <a href="Certificate/Iran_Europe_Language_Institute_English_Certificate.pdf" download="Fatemeh_English_Certificate.jpg" class="cert-link-btn" onclick="event.stopPropagation();">Show ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
     <section class="contact-section reveal" id="contact">
-      <div>
-        <p class="eyebrow">Contact</p>
+      <div class="contact-head">
+        <h2 class="eyebrow" style="font-size: 1.5rem; font-weight: bold;">CONTACT</h2>
         <h2>Let’s connect &amp; collaborate</h2>
       </div>
-      <div class="contact-links">
-        <a href="mailto:farimahghasemi.workk@gmail.com">Email <i class="ph ph-arrow-up-right"></i></a>
-        <a href="https://ir.linkedin.com/in/fatemeh-ghasemi-5772963b3" target="_blank" rel="noopener">LinkedIn <i class="ph ph-arrow-up-right"></i></a>
-        <a href="#contact">Download CV <i class="ph ph-download-simple"></i></a>
+
+      <div class="contact-boxes">
+        <button type="button" class="contact-card copy-email-card" id="copyEmailBtn"
+          data-email="farimahghasemi.workk@gmail.com">
+          <div class="card-icon"><i class="ph ph-copy"></i></div>
+          <div class="card-info">
+            <span class="card-title">Email</span>
+            <span class="card-value">farimahghasemi.workk@gmail.com</span>
+          </div>
+          <span class="copy-badge" id="copyBadge">Copy</span>
+        </button>
+
+        <a href="https://ir.linkedin.com/in/fatemeh-ghasemi-5772963b3" target="_blank" rel="noopener"
+          class="contact-card">
+          <div class="card-icon"><i class="ph ph-linkedin-logo"></i></div>
+          <div class="card-info">
+            <span class="card-title">LinkedIn</span>
+            <span class="card-value">Fatemeh Ghasemi</span>
+          </div>
+          <div class="card-action"><i class="ph ph-arrow-up-right"></i></div>
+        </a>
+
+        <a href="cv.pdf" download target="_blank" rel="noopener" class="contact-card">
+          <div class="card-icon"><i class="ph ph-file-pdf"></i></div>
+          <div class="card-info">
+            <span class="card-title">Resume / CV</span>
+            <span class="card-value">Download PDF</span>
+          </div>
+          <div class="card-action"><i class="ph ph-download-simple"></i></div>
+        </a>
       </div>
     </section>
   </main>
 
   <footer>
-    <span>© 2026 Fatemeh Ghasemi</span>
-    <span>Unity · C# · Gameplay Programming</span>
+    <span>© 2026 Fatemeh (Farimah) Ghasemi</span>
+    <span>Unity · C# · Game Programming</span>
   </footer>
 
   <div class="modal" id="projectModal" aria-hidden="true">
@@ -294,4 +559,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
