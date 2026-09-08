@@ -337,7 +337,7 @@ document.addEventListener('DOMContentLoaded', () => {
       • Implemented environmental gameplay mechanics, including movable rocks and a light-growth ability activated through trigger zones and player input.<br>
       <div class="video-section">
         <span class="video-title">Gnosa Game Video</span>
-        <a href="https://drive.google.com/drive/folders/1tH5tmkYBI9Qsgm95Z3hPW9tdGiglX-Qs?usp=sharing" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
+        <a href="https://drive.google.com/file/d/1tQp0SAPyJtKxT7SH_cOoMxtqnH6Afie8/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
           Gnosa Game Video <span class="arrow">↗</span>
         </a>
       </div>`
