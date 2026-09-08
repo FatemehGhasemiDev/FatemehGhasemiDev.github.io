@@ -94,6 +94,21 @@ document.addEventListener('DOMContentLoaded', () => {
         ["Focus", "Gameplay Systems & Minigames"]
       ],
       sections: [
+       [
+"Gameplay System",
+`<br><br>
+<strong>Implementation:</strong><br>
+• Built the main gameplay flow, from spawning and matching items to level progression and game-state handling.<br>
+• Worked with hundreds of Rigidbody-based objects that could fall, stack, and interact with each other during gameplay.<br>
+• Tuned Rigidbody settings and Physics Materials to reduce clipping, unwanted movement, and physics jitter.<br>
+• Profiled physics-heavy levels and adjusted the setup to keep gameplay responsive on mobile devices.<br>
+• Wrote the gameplay logic in C# and kept the systems modular so they could be reused across different levels and mechanics.<br>
+
+<div class="video-section"> <span class="video-title">Gameplay System Video</span> 
+<a href="https://drive.google.com/file/d/1WZLxT47AmUv8ogGLmPHa80y01wkSY3iP/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn"> Gameplay System Video<span class="arrow">↗</span> 
+</a> 
+</div>` 
+],
         [
           "Unicorn race minigame",
           `The objective is to complete puzzle levels faster than AI opponents to win the race.<br><br>
@@ -272,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
       • Used AI-assisted tools to generate sprite sheets and improve the animation workflow.<br>
       <div class="video-section">
         <span class="video-title">Bingo Game Video</span>
-        <a href="https://drive.google.com/file/d/1Ha0gbrKA-rASWC_AFNPUzkf1IktXzOTc/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
+        <a href="https://drive.google.com/file/d/1DJ5VDEvQouzL4FQ3xstiOWz1iimp2rNP/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
           Bingo Game Video <span class="arrow">↗</span>
         </a>
       </div>`
