@@ -346,12 +346,12 @@ document.addEventListener('DOMContentLoaded', () => {
 },
     hospital: {
       kicker: "02 · PERSONAL / SURVIVAL HORROR",
-      title: "Hospital Escape",
+      title: "Hospital Rise",
       intro: "A first/third-person survival horror project inspired by Granny.",
       boxes: [["Role", "Solo Developer"], ["Engine", "Unity Engine"], ["Genre", "Survival Horror"], ["Focus", "Gameplay · Interaction"]],
       sections: [
         [
-          "Hospital Escape Game",
+          "Hospital Rise Game",
           `<strong>Implementation:</strong><br>
     • Developed a complete first-person and third-person character controller with camera switching.<br>
     • Built a modular interaction system for environmental objects and gameplay events.<br>
@@ -361,9 +361,9 @@ document.addEventListener('DOMContentLoaded', () => {
     • Designed and programmed puzzle mechanics and level logic.<br>
     • Implemented save/load systems, UI systems, audio integration, lighting, and animation workflows.<br>
           <div class="video-section">
-            <span class="video-title">Hospital Escape Game Video</span>
-            <a href="https://drive.google.com/file/d/1GNs7lLm4XU1bF-pTDWlPfIOGtuvL1Wkq/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
-              Hospital Escape Game Video <span class="arrow">↗</span>
+            <span class="video-title">Hospital Rise Game Video</span>
+            <a href="https://drive.google.com/file/d/1EZGQhxOH_at3wyANa9Y7MU4ZztCOch-P/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="video-pill-btn">
+              Hospital Rise Game Video <span class="arrow">↗</span>
             </a>
           </div>`
         ]
